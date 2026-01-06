@@ -1,0 +1,165 @@
+.lang-four-challenge-box {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.lang-four-challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lang-four-challenge-title {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 15px;
+  color: #F5F7FF;
+}
+
+.lang-four-challenge-title i {
+  color: #FFD166;
+}
+
+.lang-four-challenge-timer {
+  background: rgba(108, 99, 255, 0.1);
+  padding: 0.8rem 1.5rem;
+  border-radius: 15px;
+  color: #FF6584;
+  font-weight: 600;
+}
+
+
+.lang-four-progress-container {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.lang-four-progress-fill {
+  height: 100%;
+  background-color: #36D1DC;
+  border-radius: 5px;
+  width: 58%;
+}
+
+.lang-four-challenges-list {
+  margin-bottom: 2rem;
+}
+
+.lang-four-challenge-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.lang-four-completed {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.lang-four-challenge-check {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-four-challenge-check i {
+  color: #10B981;
+  font-size: 1.5rem;
+}
+
+.lang-four-challenge-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #10B981;
+  border-radius: 50%;
+  transition: 0.7s ease;
+}
+.lang-four-challenge-circle:hover {
+  background-color: #10B981;
+}
+
+.lang-four-challenge-info {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.lang-four-challenge-info h5 {
+  color: white;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.lang-four-challenge-xp {
+  color: #FFD166;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+.lang-four-challenge-rewards {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.lang-four-challenge-rewards h5 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.lang-four-rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.lang-four-reward-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.lang-four-reward-day {
+  color: #FF6584;
+  margin-bottom: 0.5rem;
+}
+
+.lang-four-reward-item i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: white;
+
+}
+.lang-four-reward-item span {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .lang-four-challenge-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lang-four-rewards-grid {
+    grid-template-columns:repeat(2,1fr) ;
+  }
+}

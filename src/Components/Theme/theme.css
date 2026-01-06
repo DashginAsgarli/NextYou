@@ -1,0 +1,223 @@
+.light-theme {
+    background-color: white !important;
+    color: black !important;
+}
+
+.light-theme * {
+    background-color: white !important;
+    color: black !important;
+    border-color: black !important;
+}
+
+.light-theme .parameters-text {
+    color: rgb(255, 107, 107) !important;
+
+}
+
+.light-theme .parametrs-color {
+    color: rgb(0, 243, 255) !important;
+}
+
+.light-theme .sports-btn {
+    border: 2px solid rgb(255, 107, 107) !important;
+}
+
+.light-theme .sports-clear {
+    border: 2px solid rgb(0, 243, 255) !important;
+}
+
+.light-theme .sports-box-div {
+    border: 2px solid rgb(0, 243, 255) !important;
+}
+
+.light-theme .sports-h2-l {
+    color: rgb(255, 107, 107) !important;
+}
+
+.music-controls-div2 {
+    border: 1px solid rgb(255, 107, 107) !important;
+}
+
+
+.light-theme .logo-name span {
+    text-shadow: none !important;
+}
+
+.light-theme .logo-name span {
+    color: rgb(255, 107, 107) !important;
+}
+
+.light-theme .logo-name span:first-child {
+    color: rgb(0, 243, 255) !important;
+}
+
+
+
+.light-theme .book-search input:focus {
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.light-theme .book-search button {
+    background-color: rgb(0, 0, 0) !important;
+    color: white !important;
+
+}
+
+.light-theme .home-page-primary {
+    border: 2px solid rgb(255, 107, 107) !important;
+}
+
+.light-theme .home-page-primary:hover {
+    border: 3px solid brown !important;
+}
+
+.light-theme .motivation-container {
+    border: 2px solid rgb(18, 24, 38) !important;
+}
+
+.light-theme .hero-content h1 {
+    color: rgb(255, 107, 107) !important;
+}
+
+.light-theme .goal-logo div i {
+    color: rgb(255, 107, 107) !important;
+}
+
+
+.light-theme .planner-item {
+    border: 1px solid #aeff6b !important;
+}
+
+.light-theme .planner-delete:hover {
+    color: #aeff6b !important;
+}
+
+
+.light-theme .planner-add-btn {
+    background-color: #aeff6b !important;
+    color: white !important;
+
+}
+
+.light-theme .code-text i {
+    color: red !important;
+}
+
+.light-theme .login-logup .active {
+    border: 2px solid brown !important;
+}
+
+.light-theme .login-button {
+    background-color: rgb(0, 243, 255) !important;
+    color: white !important;
+}
+
+.light-theme .input-green {
+    border: 2px solid green !important;
+}
+
+.light-theme .input-red {
+    border: 2px solid red !important;
+}
+
+.light-theme .login-one-box {
+    background-color: rgb(0, 243, 255);
+    border: 1px solid rgb(0, 243, 255);
+    box-shadow: rgb(255, 255, 255) 0 0 0.625rem !important;
+}
+
+.light-theme .lang-six-container {
+    background: white !important;
+}
+
+.light-theme .lang-six-search-btn {
+    background: white !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.light-theme .lang-two-card {
+    background: white !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.light-theme .lang-two-badge {
+    background: white !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.light-theme .lang-two-flag {
+    background: white !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.light-theme .lang-three-item {
+    border: 1px solid rgb(0, 0, 0) !important;
+
+}
+
+.light-theme .lang-seven-container {
+    background: white !important;
+}
+
+.light-theme .lang-seven-play-again {
+    background: white !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.light-theme .lang-eleven-container {
+    background: white !important;
+}
+
+.light-theme .lang-eleven-lesson-view {
+    background: white !important;
+}
+
+.light-theme .lang-four-challenge-timer {
+    color: red !important;
+}
+
+.light-theme .lang-four-progress-container {
+    background: rgb(209, 209, 209) !important;
+}
+
+.light-theme .lang-four-progress-fill {
+    background: rgb(0, 0, 0) !important;
+}
+.light-theme .lang-four-challenge-item{
+    background: rgb(209, 209, 209) !important;
+
+}
+.light-theme .lang-four-challenge-check{
+    background: rgb(209, 209, 209) !important;
+
+}
+.light-theme .lang-four-challenge-info{
+    background: rgb(209, 209, 209) !important;
+
+}
+.light-theme .lang-four-challenge-info h5{
+    background: rgb(209, 209, 209) !important;
+    color: #ffffff !important;
+
+}
+.light-theme .lang-four-challenge-xp{
+    background: rgb(209, 209, 209) !important;
+    color: #ff9a02 !important;
+}
+.light-theme .html-tutorial-category-btn {
+    background: rgb(255, 254, 254) !important;
+}
+.light-theme .progress-bar-fill{
+    background: rgb(247, 117, 117) !important;
+}
+.light-theme .progress-bar-container{
+    background: rgb(218, 218, 218) !important;
+}
+.light-theme .volume-control input{
+    background: rgb(218, 218, 218) !important;
+}
+.light-theme header {
+    border-bottom:1px solid rgb(218, 218, 218) !important;
+
+}
+

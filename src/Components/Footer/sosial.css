@@ -1,0 +1,122 @@
+.social-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-cards {
+    background-color: rgba(10, 14, 23, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.6s ease;
+
+}
+
+.social-cards:hover {
+    border: 1px solid rgba(10, 14, 23, 0.9);
+    box-shadow: rgba(10, 14, 23, 0.9) 0px 0px 20px, rgba(10, 14, 23, 0.9) 0px 0px 20px, rgba(10, 14, 23, 0.9) 0px 0px 20px;
+}
+
+.social-cards:hover .social-link {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 10px, rgba(255, 255, 255, 0.1) 0px 0px 10px, rgba(255, 255, 255, 0.1) 0px 0px 10px;
+}
+
+.social-cards div i {
+    font-size: 45px;
+    color: white;
+}
+
+.social-followers {
+    color: #8A8A9D;
+    font-size: 13px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.social-link i {
+    font-size: 23px !important;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-container-h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) {}
+
+@media screen and (max-width: 767px) {
+
+    .social-container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .social-cards {
+        padding: 20px 25px;
+        gap: 5px;
+        box-shadow: none;
+
+
+    }
+
+    .social-cards h2 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .social-cards div i {
+        font-size: 25px;
+    }
+
+    .social-followers {
+        font-size: 7px;
+    }
+
+    .social-link {
+        gap: 5px;
+        margin-top: 20px;
+        padding: 2px 10px;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+
+    .social-link i {
+        font-size: 10px !important;
+    }
+
+    .social-link span {
+        font-size: 8px;
+    }
+
+    .social-container-h1 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+}

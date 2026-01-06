@@ -1,0 +1,757 @@
+.lang-eleven-container {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(54, 209, 220, 0.1) 100%);
+    border-radius: 25px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 1400px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-eleven-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.lang-eleven-title {
+    font-size: 2.8rem;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lang-eleven-title i {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #6C63FF, #36D1DC);
+    background-clip: text;
+}
+
+.lang-eleven-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.lang-eleven-lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.lang-eleven-lesson-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 18px;
+    padding: 1.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.lang-eleven-lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6C63FF, #36D1DC);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.lang-eleven-lesson-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(108, 99, 255, 0.3);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
+}
+
+.lang-eleven-lesson-card:hover::before {
+    transform: scaleX(1);
+}
+
+.lang-eleven-lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.lang-eleven-lesson-badge {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.lang-eleven-lesson-level {
+    background: rgba(108, 99, 255, 0.2);
+    color: #A29BFF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.lang-eleven-lesson-category {
+    background: rgba(54, 209, 220, 0.2);
+    color: #6CE6EF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.lang-eleven-lesson-content {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.lang-eleven-lesson-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    line-height: 1.3;
+    min-height: 3.5rem;
+}
+
+.lang-eleven-lesson-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.2rem 0;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lang-eleven-lesson-meta {
+    display: flex;
+    gap: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.lang-eleven-lesson-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.lang-eleven-lesson-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.lang-eleven-start-lesson-btn {
+    background: linear-gradient(135deg, #6C63FF, #36D1DC);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-eleven-start-lesson-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.lang-eleven-start-lesson-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+.lang-eleven-start-lesson-btn:hover::before {
+    left: 100%;
+}
+
+.lang-eleven-lesson-view {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(54, 209, 220, 0.1) 100%);
+    border-radius: 25px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lang-eleven-back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.lang-eleven-back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.2);
+}
+
+.lang-eleven-back-btn i {
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+.lang-eleven-back-btn:hover i {
+    transform: translateX(-3px);
+}
+
+.lang-eleven-lesson-detail {
+    margin-bottom: 3rem;
+}
+
+.lang-eleven-lesson-header-detail {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.lang-eleven-lesson-tags {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.lang-eleven-lesson-tag {
+    background: rgba(108, 99, 255, 0.2);
+    color: #A29BFF;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+.lang-eleven-lesson-tag:first-child {
+    background: rgba(54, 209, 220, 0.2);
+    color: #6CE6EF;
+    border-color: rgba(54, 209, 220, 0.3);
+}
+
+.lang-eleven-lesson-title-detail {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.2;
+    background: linear-gradient(45deg, #6C63FF, #36D1DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.lang-eleven-lesson-title-detail::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #6C63FF, #36D1DC);
+    border-radius: 2px;
+}
+
+.lang-eleven-lesson-meta-detail {
+    display: flex;
+    gap: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.lang-eleven-lesson-meta-detail span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.lang-eleven-lesson-meta-detail span:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.lang-eleven-lesson-meta-detail i {
+    font-size: 1.2rem;
+    color: #6C63FF;
+}
+
+.lang-eleven-lesson-meta-detail span:first-child i {
+    color: #FFD166;
+}
+
+.lang-eleven-lesson-meta-detail span:last-child i {
+    color: #FFD166;
+}
+
+.lang-eleven-lesson-meta-detail span:last-child {
+    background: linear-gradient(135deg, rgba(255, 209, 102, 0.1), rgba(255, 183, 77, 0.1));
+    color: #FFD166;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-eleven-lesson-meta-detail span:last-child::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        transparent 30%,
+        rgba(255, 209, 102, 0.1) 50%,
+        transparent 70%
+    );
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.lang-eleven-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.lang-eleven-section:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(108, 99, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.lang-eleven-section-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lang-eleven-section-title i {
+    color: #6C63FF;
+}
+
+.lang-eleven-section code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #6C63FF;
+    display: block;
+    color: #36D1DC;
+    font-size: 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    margin: 0;
+}
+
+.lang-eleven-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.lang-eleven-section p:before {
+    content: "•";
+    color: #36D1DC;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.lang-eleven-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.lang-eleven-section li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.lang-eleven-section li:before {
+    content: "✓";
+    color: #6C63FF;
+    font-weight: bold;
+}
+
+.common-mistake-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+}
+
+.common-mistake-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.practice-questions {
+    margin-top: 1.5rem;
+}
+
+.question-block {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.question-text {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.4;
+    padding-left: 0;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.option-label:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(108, 99, 255, 0.3);
+}
+
+.option-label input[type="radio"] {
+    accent-color: #6C63FF;
+    transform: scale(1.2);
+}
+
+.check-answers-btn {
+    background: linear-gradient(135deg, #6C63FF, #36D1DC);
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin: 2rem auto 0;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.check-answers-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.3);
+}
+
+.check-answers-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.check-answers-btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.results-section {
+    margin-top: 1.5rem;
+}
+
+.score-title {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+}
+
+.score-bar {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6C63FF, #36D1DC);
+    border-radius: 6px;
+    transition: width 1s ease;
+}
+
+.answers-review {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.answer-review-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.review-question {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.user-answer {
+    color: #FF6584;
+    margin: 0.5rem 0;
+}
+
+.correct-answer {
+    color: #10B981;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.answer-status {
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.answer-status.correct {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.answer-status.wrong {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 1023px) {
+    .lang-eleven-container {
+        max-width: 95%;
+    }
+    
+    .lang-eleven-lessons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .lang-eleven-container {
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    
+    .lang-eleven-title {
+        font-size: 2.2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .lang-eleven-title i {
+        font-size: 2rem;
+    }
+    
+    .lang-eleven-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .lang-eleven-lessons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.2rem;
+    }
+    
+    .lang-eleven-lesson-card {
+        padding: 1.5rem;
+        min-height: 260px;
+    }
+    
+    .lang-eleven-lesson-title {
+        font-size: 1.3rem;
+        min-height: 3rem;
+    }
+    
+    .lang-eleven-lesson-view {
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    
+    .lang-eleven-lesson-title-detail {
+        font-size: 2rem;
+    }
+    
+    .lang-eleven-lesson-meta-detail {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+    }
+    
+    .lang-eleven-lesson-meta-detail span {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .lang-eleven-section {
+        padding: 1.5rem;
+    }
+    
+    .lang-eleven-section-title {
+        font-size: 1.3rem;
+    }
+    
+    .lang-eleven-section code {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    
+    .lang-eleven-section p {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .lang-eleven-section li {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .option-label {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .check-answers-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

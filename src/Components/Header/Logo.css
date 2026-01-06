@@ -1,0 +1,36 @@
+.logo-name span {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    color: rgb(255, 107, 107);
+    font-weight: 900;
+    text-shadow: rgb(255, 107, 107) 0px 0px 10px;
+}
+
+.logo-name span:first-child {
+    color: rgb(0, 243, 255);
+    text-shadow: rgb(0, 243, 255) 0px 0px 10px;
+}
+
+.logo-name {
+    margin-left: 3.1rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .logo-name span {
+        font-size: 1.6rem;
+    }
+
+    .logo-name {
+        margin-left: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo-name span {
+        font-size: 1.1rem;
+    }
+
+    .logo-name {
+        margin-left: 0.7rem;
+    }
+}

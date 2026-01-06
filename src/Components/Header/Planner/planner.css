@@ -1,0 +1,219 @@
+.planner-all-container {
+    padding: 3rem;
+}
+
+.planner-container {
+    background: rgba(255, 255, 255, 0.116);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 2.7rem;
+    border-radius: 1.25rem;
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.planner-container h1 {
+    color: rgb(0, 243, 255) !important;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    padding: 3rem 0;
+    margin: 0;
+}
+
+.planner-input-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+    padding: 0.9rem 2.4rem;
+    margin-bottom: 1.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.planner-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+    padding: 0.6rem 0;
+}
+
+.planner-clear {
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 0.6rem;
+}
+.planner-clear:hover{
+    color: rgb(0, 243, 255) !important;
+}
+
+.planner-tasks {
+    min-height: 6.3rem;
+    max-height: 25rem;
+    overflow-y: auto;
+    margin-bottom: 1.9rem;
+}
+
+.planner-item {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.9rem 2.2rem;
+    border-radius: 0.9rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid rgb(0, 243, 255)!important;
+}
+
+.planner-number {
+    color: rgb(0, 243, 255) !important;
+    min-width: 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.planner-text {
+    color: white;
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+.planner-delete {
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.planner-delete:hover{
+    color: rgb(0, 243, 255);
+}
+
+
+.planner-add-btn {
+    color: white ;
+    padding: 0.9rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(0, 243, 255) ;
+    transition: 0.4s ease;
+    border: none;
+    width: 100%;
+}
+
+.planner-add-btn:hover {
+    background-color: rgb(30, 139, 145) !important;
+}
+
+.planner-empty {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 3.1rem 0;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .planner-all-container {
+        padding: 2rem;
+    }
+    
+    .planner-container {
+        padding: 2rem;
+    }
+    
+    .planner-container h1 {
+        font-size: 2.5rem;
+        padding: 2.5rem 0;
+    }
+    
+    .planner-input-container {
+        padding: 0.6rem 1.6rem;
+    }
+    
+    .planner-input {
+        font-size: 0.9rem;
+    }
+    
+    .planner-item {
+        padding: 0.6rem 1.8rem;
+        gap: 1rem;
+    }
+    
+    .planner-add-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .planner-all-container {
+        padding: 1.3rem;
+    }
+    
+    .planner-container {
+        padding: 1.6rem 1.9rem 2.6rem ;
+        border-radius: 1rem;
+    }
+    
+    .planner-container h1 {
+        font-size: 1.9rem;
+        padding: 1.9rem 0;
+    }
+    
+    .planner-input-container {
+        padding: 0.2rem 1.3rem;
+        border-radius: 0.8rem;
+    }
+    
+    .planner-input {
+        font-size: 0.7rem;
+    }
+    
+    .planner-clear {
+        font-size: 1rem;
+    }
+    
+    .planner-tasks {
+        max-height: 13rem;
+    }
+    
+    .planner-item {
+        padding: 0.4rem 1rem;
+        gap: 0.8rem;
+        border-radius: 0.8rem;
+    }
+    
+    .planner-number {
+        min-width: 1.9rem;
+        font-size: 0.8rem;
+    }
+    
+    .planner-text {
+        font-size: 0.7rem;
+    }
+    
+    .planner-delete {
+        font-size: 1rem;
+    }
+    
+    .planner-add-btn {
+        font-size: 0.7rem;
+        padding: 0.7rem;
+        border-radius: 1rem;
+    }
+    
+    .planner-empty {
+        padding: 1.9rem 0;
+        font-size: 1.3rem;
+    }
+
+}

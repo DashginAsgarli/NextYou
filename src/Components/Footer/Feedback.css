@@ -1,0 +1,117 @@
+.feedback-section {
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feedback-content {
+    flex: 1;
+}
+.feedback-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.feedback-title span {
+    color: #36D1DC;
+}
+
+.feedback-text {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.feedback-icon-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #36D1DC;
+    font-size: 0.9rem;
+}
+
+.feedback-form-container {
+    flex: 1;
+}
+
+.feedback-row {
+    display: flex;
+    gap: 15px;
+}
+
+.feedback-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.feedback-group input,
+.feedback-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(108, 99, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.feedback-group input:focus,
+.feedback-group textarea:focus {
+    border-color: #36D1DC;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+}
+
+.feedback-submit {
+    background-color: #36D1DC;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.feedback-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px #36D1DC;
+}
+
+@media (max-width: 767px) {
+    .feedback-container {
+        flex-direction: column;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .feedback-content {
+        text-align: center;
+    }
+
+    .feedback-title {
+        font-size: 2rem;
+    }
+
+    .feedback-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

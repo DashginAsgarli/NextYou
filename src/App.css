@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(18, 24, 38);
+}
+header {
+  background-color: rgba(10, 14, 23, 0.9);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1.9rem;
+  padding-left: 2.5rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+  align-items: center;
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.all-icons {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+.all-icons i {
+  font-size: 1.1rem;
+}
+.icon-text {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+.icon-profil {
+  color: white;
+  font-size: 3.4rem;
+  margin-left: 3.1rem;
+  margin-right: 2.3rem;
+}
+.active {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 0.6rem;
+  text-decoration-thickness: 0.125rem;
+}
+
+/* tablet */
+@media screen and (max-width: 1023px) {
+  header {
+    padding: 1.3rem;
+    padding-left: 1.6rem;
+  }
+  
+  .nav {
+    gap: 1rem;
+  }
+  
+  .all-icons {
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .all-icons i {
+    font-size: 1rem;
+  }
+  
+  .icon-text {
+    font-size: 0.8rem;
+  }
+  
+  .icon-profil {
+    font-size: 2.8rem;
+    margin-left: 1.3rem;
+  }
+  
+  .active {
+    text-underline-offset: 0.5rem;
+  }
+}
+
+/* Mobil */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 1rem;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .icon-profil {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+}

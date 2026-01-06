@@ -1,0 +1,160 @@
+.lang-two-box {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.lang-two-header {
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.lang-two-title {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.lang-two-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.lang-two-card {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.15) 0%, rgba(54, 209, 220, 0.15) 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.lang-two-card:hover {
+    transform: perspective(500px) rotateY(10deg) rotateX(5deg) translateY(-10px);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+}
+
+.lang-two-flag {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.lang-two-card:nth-child(1) .lang-two-flag {
+    background: linear-gradient(135deg, #012169 0%, #C8102E 50%, #FFFFFF 100%);
+}
+
+.lang-two-card:nth-child(2) .lang-two-flag {
+    background: linear-gradient(135deg, #000000 0%, #DD0000 50%, #FFCE00 100%);
+}
+
+.lang-two-card:nth-child(3) .lang-two-flag {
+    background: linear-gradient(135deg, #FFFFFF 0%, #0039A6 33%, #D52B1E 66%);
+}
+
+.lang-two-card:nth-child(4) .lang-two-flag {
+    background: linear-gradient(135deg, #AA151B 0%, #F1BF00 50%);
+}
+
+.lang-two-name {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lang-two-count {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: rgb(243, 200, 106);
+}
+
+
+.lang-two-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.lang-two-card:nth-child(1) .lang-two-badge {
+    background-color: #36D1DC;
+}
+
+.lang-two-card:nth-child(2) .lang-two-badge {
+    background-color: #FF6584;
+}
+
+.lang-two-card:nth-child(3) .lang-two-badge {
+    background-color: #5D26C1;
+}
+
+.lang-two-card:nth-child(4) .lang-two-badge {
+    background-color: #FFD166;
+}
+
+.lang-two-divider {
+    height: 2px;
+    background: linear-gradient(30deg, transparent, #09f8bc, transparent);
+    margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .lang-two-header {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .lang-two-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .lang-two-box {
+        padding: 1rem;
+    }
+
+    .lang-two-name {
+        font-size: 1.2rem;
+    }
+
+    .lang-two-count {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0.5rem 0;
+    }
+
+    .lang-two-flag {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+    }
+    .lang-two-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}

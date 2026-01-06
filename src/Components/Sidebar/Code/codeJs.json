@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript Giriş",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "12 dəqiqə",
+    "points": 45,
+    "icon": "bi bi-braces",
+    "content": {
+      "description": "JavaScript - veb səhifələri interaktiv etmək üçün proqramlaşdırma dili.",
+      "theory": "JavaScript veb inkişafında istifadə olunan proqramlaşdırma dilidir. Brauzerlərdə işləyərək veb səhifələri dinamik və interaktiv edir. JavaScript HTML və CSS ilə birlikdə işləyərək veb tətbiqlərini yaratmağa imkan verir. JavaScript-in əsas xüsusiyyətləri: dinamik tipləşdirmə, prototip əsaslı obyekt oriyentasiyası, birinci dərəcəli funksiyalar. JavaScript Node.js ilə server tərəfində də işləyə bilir. JavaScript-in ECMAScript spesifikasiyası standartlaşdırılmış versiyasıdır. Modern JavaScript (ES6+) bir çox yeni xüsusiyyətlər əlavə edir: arrow funksiyalar, let/const, classes, promises və s.",
+      "examples": [
+        "// İlk JavaScript kodumuz",
+        "console.log('Salam Dünya!');",
+        "",
+        "// Dəyişən elan etmək",
+        "let ad = 'Əli';",
+        "console.log('Salam, ' + ad);",
+        "",
+        "// Funksiya yaratmaq",
+        "function salamla() {",
+        "  alert('Salam!');",
+        "}",
+        "",
+        "// HTML elementinə təsir etmək",
+        "document.getElementById('demo').innerHTML = 'JavaScript ilə salam!';"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Konsola 'JavaScript öyrənirəm!' yazdırın:",
+          "initialCode": "console.______('______');",
+          "correctAnswers": {
+            "log": "log",
+            "text": "JavaScript öyrənirəm!"
+          }
+        },
+        {
+          "type": "multiple",
+          "question": "JavaScript hansı məqsədlə istifadə olunur?",
+          "options": [
+            "Veb səhifələri interaktiv etmək",
+            "Şəkilləri redaktə etmək",
+            "Verilənlər bazası yaratmaq",
+            "İşletim sistemi proqramlaşdırmaq"
+          ],
+          "correct": "Veb səhifələri interaktiv etmək"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Sintaksisi",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "15 dəqiqə",
+    "points": 50,
+    "icon": "bi bi-code-slash",
+    "content": {
+      "description": "JavaScript kodunun strukturu və yazılış qaydaları.",
+      "theory": "JavaScript sintaksisi Java və C dillərinə bənzəyir, lakin daha esnekdir. JavaScript kod sətirləri nöqtəli vergüllə bitir (çoğu zaman avtomatik əlavə olunur). Şərhlər // və ya /* */ ilə əlavə olunur. JavaScript böyük-kiçik hərf həssasdır (case-sensitive). Dəyişən adları hərf, $ və ya _ ilə başlaya bilər. JavaScript-in əsas sintaksisi: dəyişənlər, operatorlar, şərt ifadələri, döngülər, funksiyalar. Kod blokları {} mötərizələri ilə müəyyən olunur. JavaScript-in özəlliklərindən biri hoisting (qaldırma) - dəyişən və funksiya elanları kodun yuxarısına köçürülür.",
+      "examples": [
+        "// Tək sətirli şərh",
+        "/*",
+        "Çoxsətirli şərh",
+        "Bu JavaScript kodudur",
+        "*/",
+        "",
+        "// Dəyişən elanı",
+        "let x = 5;",
+        "const PI = 3.14;",
+        "",
+        "// Funksiya elanı",
+        "function topla(a, b) {",
+        "  return a + b;",
+        "}",
+        "",
+        "// Şərt ifadəsi",
+        "if (x > 0) {",
+        "  console.log('Müsbət');",
+        "} else {",
+        "  console.log('Mənfi');",
+        "}",
+        "",
+        "// Döngü",
+        "for (let i = 0; i < 5; i++) {",
+        "  console.log(i);",
+        "}"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "İki ədədi toplayan funksiya yazın:",
+          "initialCode": "______ topla(a, b) {\n  ______ a + b;\n}",
+          "correctAnswers": {
+            "function": "function",
+            "return": "return"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "JavaScript Dəyişənləri",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "18 dəqiqə",
+    "points": 55,
+    "icon": "bi bi-puzzle",
+    "content": {
+      "description": "JavaScript-də dəyişənlərin elan edilməsi və istifadəsi.",
+      "theory": "JavaScript-də dəyişənlər üç əsas açar sözlə elan oluna bilər: var, let, const. var köhnə üsuldur və function scope-a malikdir. let və const ES6 ilə əlavə olunub və block scope-a malikdir. let dəyişən dəyəri, const isə sabit dəyəri təyin edir. Dəyişən adları: hərf, $, _ ilə başlaya bilər, rəqəmlə başlaya bilməz, böyük-kiçik hərf həssasdır. JavaScript dinamik tiplidir - eyni dəyişən fərqli tiplərdə dəyərlər ala bilər. Dəyişənlərə ilkin dəyər verilmədikdə undefined olur. Hoisting - dəyişən elanları kodun yuxarısına köçürülür.",
+      "examples": [
+        "// var elanı (köhnə üsul)",
+        "var ad = 'Əli';",
+        "",
+        "// let elanı (müasir üsul)",
+        "let yas = 25;",
+        "yas = 26; // Dəyişdirilə bilər",
+        "",
+        "// const elanı (sabit)",
+        "const PI = 3.14;",
+        "// PI = 3.15; // Xəta! Sabit dəyişdirilə bilməz",
+        "",
+        "// Çoxlu elan",
+        "let x = 1, y = 2, z = 3;",
+        "",
+        "// İlkin dəyərsiz",
+        "let qiymet;",
+        "console.log(qiymet); // undefined",
+        "",
+        "// Dəyişən adları",
+        "let $dolar = 'valyuta';",
+        "let _altxett = 'gizli';",
+        "let firstName = 'Ayşə';"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "Hansı açar söz sabit dəyişən elan etmək üçün istifadə olunur?",
+          "options": ["var", "let", "const", "static"],
+          "correct": "const"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "JavaScript Məlumat Növləri",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "20 dəqiqə",
+    "points": 60,
+    "icon": "bi bi-card-checklist",
+    "content": {
+      "description": "JavaScript-də müxtəlif məlumat tipləri və onların istifadəsi.",
+      "theory": "JavaScript-də 8 əsas məlumat növü var: string (sətir), number (ədəd), boolean (məntiqi), null, undefined, symbol, bigint, object (obyekt). Dinamik tipləşdirmə - dəyişənin tipi onun saxlana dəyərinə görə müəyyən olunur. typeof operatoru dəyişənin tipini qaytarır. String tək və ya cüt dırnaqlar içərisində yazılır. Number tam və ya kəsr ədədləri, həmçinin Infinity və NaN dəyərlərini ehtiva edir. Boolean true və ya false dəyərlərini alır. null qəsdən boş dəyəri, undefined isə təyin olunmamış dəyəri təmsil edir. Object mürəkkəb məlumat strukturları üçün istifadə olunur.",
+      "examples": [
+        "// String",
+        "let ad = 'Əli';",
+        "let soyad = \"Əliyev\";",
+        "",
+        "// Number",
+        "let yas = 25;",
+        "let qiymet = 9.5;",
+        "let sonsuz = Infinity;",
+        "let nan = NaN;",
+        "",
+        "// Boolean",
+        "let aktiv = true;",
+        "let tamamlandi = false;",
+        "",
+        "// Null və undefined",
+        "let bos = null;",
+        "let tanimsiz; // undefined",
+        "",
+        "// typeof istifadəsi",
+        "console.log(typeof ad); // 'string'",
+        "console.log(typeof yas); // 'number'",
+        "console.log(typeof aktiv); // 'boolean'",
+        "console.log(typeof bos); // 'object' (JavaScript xüsusiyyəti)",
+        "console.log(typeof tanimsiz); // 'undefined'",
+        "",
+        "// BigInt",
+        "let boyukEded = 9007199254740991n;"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Aşağıdakı dəyişənlərin tiplərini tapın:",
+          "initialCode": "let ad = 'Aydan';\nlet yas = 30;\nlet evli = false;\n\nconsole.log(typeof ______); // string\nconsole.log(typeof ______); // number\nconsole.log(typeof ______); // boolean",
+          "correctAnswers": {
+            "ad": "ad",
+            "yas": "yas",
+            "evli": "evli"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "JavaScript Operatorları",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "22 dəqiqə",
+    "points": 65,
+    "icon": "bi bi-calculator",
+    "content": {
+      "description": "JavaScript-də arifmetik, müqayisə və məntiqi operatorlar.",
+      "theory": "JavaScript operatorları dəyərlər üzərində əməliyyatlar aparmaq üçün istifadə olunur. Arifmetik operatorlar: + (toplama), - (çıxma), * (vurma), / (bölmə), % (qalıq), ** (qüvvət). Müqayisə operatorları: == (bərabər), === (ciddi bərabər), != (bərabər deyil), !== (ciddi bərabər deyil), > (böyük), < (kiçik), >= (böyük və ya bərabər), <= (kiçik və ya bərabər). Məntiqi operatorlar: && (və), || (və ya), ! (deyil). Artırma/azaltma operatorları: ++, --. Assignment operatorları: =, +=, -=, *=, /=. String operatoru: + (birləşdirmə). Ternary operatoru: şərt ? dəyər1 : dəyər2.",
+      "examples": [
+        "// Arifmetik operatorlar",
+        "let toplam = 10 + 5; // 15",
+        "let ferq = 10 - 5; // 5",
+        "let hasil = 10 * 5; // 50",
+        "let bolme = 10 / 5; // 2",
+        "let qaliq = 10 % 3; // 1",
+        "let quvvet = 2 ** 3; // 8",
+        "",
+        "// Müqayisə operatorları",
+        "console.log(5 == '5'); // true (dəyər bərabərliyi)",
+        "console.log(5 === '5'); // false (tip və dəyər bərabərliyi)",
+        "console.log(5 != '5'); // false",
+        "console.log(5 !== '5'); // true",
+        "console.log(10 > 5); // true",
+        "",
+        "// Məntiqi operatorlar",
+        "let ve = (5 > 3) && (10 > 5); // true",
+        "let ya = (5 < 3) || (10 > 5); // true",
+        "let deyil = !(5 > 3); // false",
+        "",
+        "// Artırma/azaltma",
+        "let say = 5;",
+        "say++; // 6",
+        "say--; // 5",
+        "",
+        "// Assignment operatorları",
+        "let x = 10;",
+        "x += 5; // x = x + 5 = 15",
+        "x -= 3; // x = 12",
+        "",
+        "// String birləşdirmə",
+        "let ad = 'Əli' + ' ' + 'Əliyev'; // 'Əli Əliyev'",
+        "",
+        "// Ternary operatoru",
+        "let netice = (yas >= 18) ? 'Böyük' : 'Kiçik';"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "İki ədədin cəmini tapan və ciddi bərabərliyi yoxlayan kod yazın:",
+          "initialCode": "let a = 10;\nlet b = 5;\nlet c = a + b;\nlet beraber = (a ______ b);\nconsole.log('Cəm: ' + c);\nconsole.log('Bərabər: ' + beraber);",
+          "correctAnswers": {
+            "plus": "+",
+            "strict": "==="
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "JavaScript Şərt İfadələri",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "20 dəqiqə",
+    "points": 60,
+    "icon": "bi bi-question-circle",
+    "content": {
+      "description": "JavaScript-də proqram axınını idarə etmək üçün şərt ifadələri.",
+      "theory": "JavaScript-də şərt ifadələri müxtəlif şərtlərə əsaslanaraq kod bloklarının icra olunmasını idarə edir. Əsas şərt ifadələri: if, else, else if, switch. if ifadəsi verilmiş şərt doğru olduqda kod blokunu icra edir. else ifadəsi if şərti yalan olduqda icra olunur. else if bir neçə alternativ şərt üçün istifadə olunur. switch ifadəsi bir dəyişənin müxtəlif dəyərlərinə əsaslanaraq fərqli kod bloklarını icra etmək üçün istifadə olunur. Şərt ifadələri mürəkkəb məntiqi ifadələrlə birləşdirilə bilər.",
+      "examples": [
+        "// if ifadəsi",
+        "let yas = 18;",
+        "if (yas >= 18) {",
+        "  console.log('Sürücü vəsiqəsi ala bilərsiniz');",
+        "}",
+        "",
+        "// if...else",
+        "let vaxt = 14;",
+        "if (vaxt < 12) {",
+        "  console.log('Sabahınız xeyir');",
+        "} else {",
+        "  console.log('Günortanız xeyir');",
+        "}",
+        "",
+        "// if...else if...else",
+        "let qiymet = 85;",
+        "if (qiymet >= 90) {",
+        "  console.log('Əla');",
+        "} else if (qiymet >= 70) {",
+        "  console.log('Yaxşı');",
+        "} else if (qiymet >= 50) {",
+        "  console.log('Kafi');",
+        "} else {",
+        "  console.log('Zəif');",
+        "}",
+        "",
+        "// switch ifadəsi",
+        "let gun = 3;",
+        "switch (gun) {",
+        "  case 1:",
+        "    console.log('Bazar ertəsi');",
+        "    break;",
+        "  case 2:",
+        "    console.log('Çərşənbə axşamı');",
+        "    break;",
+        "  case 3:",
+        "    console.log('Çərşənbə');",
+        "    break;",
+        "  default:",
+        "    console.log('Digər gün');",
+        "}",
+        "",
+        "// Mürəkkəb şərt",
+        "if (yas >= 18 && sınaqKecdi) {",
+        "  console.log('Vəsiqə verilir');",
+        "}"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Ədədin müsbət, mənfi və ya sıfır olduğunu yoxlayın:",
+          "initialCode": "let eded = -5;\nif (______ > 0) {\n  console.log('Müsbət');\n} ______ if (eded < 0) {\n  console.log('Mənfi');\n} ______ {\n  console.log('Sıfır');\n}",
+          "correctAnswers": {
+            "eded": "eded",
+            "else": "else",
+            "else2": "else"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "JavaScript Döngüləri",
+    "category": "Əsaslar",
+    "level": "Orta",
+    "duration": "25 dəqiqə",
+    "points": 70,
+    "icon": "bi bi-arrow-repeat",
+    "content": {
+      "description": "JavaScript-də təkrarlanan əməliyyatlar üçün döngülər.",
+      "theory": "JavaScript döngüləri kod bloklarını təkrarlamaq üçün istifadə olunur. Əsas döngü növləri: for, while, do...while, for...in, for...of. for döngüsü müəyyən sayda təkrarlar üçün istifadə olunur. while döngüsü şərt doğru olduğu müddətcə işləyir. do...while döngüsü kod blokunu ən azı bir dəfə icra edir, sonra şərti yoxlayır. for...in döngüsü obyektin xüsusiyyətləri üzərində təkrarlayır. for...of döngüsü iterable obyektlərin (massiv, string) dəyərləri üzərində təkrarlayır. break ifadəsi döngüdən çıxmaq, continue ifadəsi cari iterasiyanı atlayıb növbətiyə keçmək üçün istifadə olunur.",
+      "examples": [
+        "// for döngüsü",
+        "for (let i = 0; i < 5; i++) {",
+        "  console.log(i); // 0, 1, 2, 3, 4",
+        "}",
+        "",
+        "// while döngüsü",
+        "let say = 0;",
+        "while (say < 5) {",
+        "  console.log(say);",
+        "  say++;",
+        "}",
+        "",
+        "// do...while döngüsü",
+        "let x = 0;",
+        "do {",
+        "  console.log(x);",
+        "  x++;",
+        "} while (x < 3);",
+        "",
+        "// for...in döngüsü (obyekt üçün)",
+        "let insan = { ad: 'Əli', yas: 25, seher: 'Bakı' };",
+        "for (let xususiyyet in insan) {",
+        "  console.log(xususiyyet + ': ' + insan[xususiyyet]);",
+        "}",
+        "",
+        "// for...of döngüsü (massiv üçün)",
+        "let reqemler = [1, 2, 3, 4, 5];",
+        "for (let reqem of reqemler) {",
+        "  console.log(reqem);",
+        "}",
+        "",
+        "// break istifadəsi",
+        "for (let i = 0; i < 10; i++) {",
+        "  if (i === 5) {",
+        "    break; // Döngü dayanır",
+        "  }",
+        "  console.log(i); // 0, 1, 2, 3, 4",
+        "}",
+        "",
+        "// continue istifadəsi",
+        "for (let i = 0; i < 5; i++) {",
+        "  if (i === 2) {",
+        "    continue; // 2 atlanır",
+        "  }",
+        "  console.log(i); // 0, 1, 3, 4",
+        "}"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "1-dən 10-a qədər cüt ədədləri çap edən for döngüsü yazın:",
+          "initialCode": "for (let i = 1; i <= 10; i++) {\n  if (i % 2 ______ 0) {\n    console.______(i);\n  }\n}",
+          "correctAnswers": {
+            "equals": "==",
+            "log": "log"
+          }
+        }
+      ]
+    }
+  }
+]

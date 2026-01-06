@@ -1,0 +1,72 @@
+.feedback-faq-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.feedback-box{
+    padding: 80px 5%;
+
+
+}
+.feedback-faq-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #36D1DC;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.feedback-faq-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(108, 99, 255, 0.1);
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-faq-item:hover {
+  background: rgba(108, 99, 255, 0.05);
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+.feedback-faq-question {
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.feedback-faq-question i {
+  font-size: 0.8rem;
+  color: #6C63FF;
+  transition: 0.3s;
+}
+
+.feedback-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.feedback-faq-item.active .feedback-faq-answer {
+  max-height: 200px;
+  padding: 0 25px 20px 25px;
+  transition: all 0.4s cubic-bezier(1, 0, 1, 0);
+}
+
+.feedback-faq-answer p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.feedback-faq-item.active {
+  border-color: #36D1DC;
+  box-shadow: 0 0 15px rgba(54, 209, 220, 0.1);
+}

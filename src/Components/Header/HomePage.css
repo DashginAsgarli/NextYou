@@ -1,0 +1,114 @@
+.home-page-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: radial-gradient(circle at 80% 20%, rgba(10, 14, 23, 0.9) 0%, transparent 50%), radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.grid-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(108, 99, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(108, 99, 255, 0.1) 1px, transparent 1px);
+    background-size: 3rem 3rem;
+    opacity: 0.5;
+    z-index: -5;
+}
+
+.hero-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+
+.home-page-link-i {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #B0B8D3;
+    text-align: center;
+    margin-bottom: 3.7rem;
+    font-size: 1.1rem;
+}
+
+.home-page-primary {
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    border: none;
+    min-width: 13.75rem;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(255, 107, 107);
+    color: white;
+
+}
+
+.home-page-primary:hover {
+    background-color: brown;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-page-primary {
+        min-width: 12rem;
+        padding: 0.875rem 1.75rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .hero-content p {
+        font-size: 0.65rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .home-page-primary {
+        width: 53vw;
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
+}

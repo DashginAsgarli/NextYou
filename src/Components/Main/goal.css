@@ -1,0 +1,127 @@
+.goal-container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.goal-box {
+    padding: 30px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    width: 300px;
+    border-radius: 20px;
+    margin: 15px 0 30px;
+    transition: 0.4s ease;
+}
+
+.goal-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 107, 107);
+}
+
+.goal-logo div {
+    background-color: rgb(0, 243, 255);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.goal-logo {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.goal-logo p {
+    font-size: 20px;
+}
+
+.goal-p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) {
+    .goal-container {
+        gap: 20px;
+    }
+
+    .goal-box {
+        padding: 20px;
+        width: 250px;
+        border-radius: 20px;
+    }
+    .goal-logo div {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .goal-logo {
+        gap: 130px;
+        margin-bottom: 25px;
+    }
+    .goal-logo p {
+        font-size: 18px;
+    }
+
+    .goal-p {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .goal-p-1 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .goal-container {
+        gap: 0;
+    }
+
+    .goal-box {
+        padding: 10px 23px;
+        width: 90vw;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+
+    .goal-logo div {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+    }
+
+    .goal-logo {
+        gap: 250px;
+        margin-bottom: 10px;
+    }
+
+    .goal-logo p {
+        font-size: 10px;
+    }
+
+    .goal-p {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .goal-p-1 {
+        font-size: 13px;
+    }
+
+}

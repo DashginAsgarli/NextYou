@@ -1,0 +1,124 @@
+.about-section {
+  padding: 100px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nexus-logo-orb {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  border: 2px solid rgba(54, 209, 220, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 50px rgba(54, 209, 220, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 0 20px rgba(54, 209, 220, 0.8);
+}
+
+.inner-circle {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 1px dashed rgba(54, 209, 220, 0.4);
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.about-content {
+  flex: 1.8;
+}
+
+.about-subtitle {
+  color: #FF6584;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.about-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+
+
+.about-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+.stat-item h4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  color: #36D1DC;
+}
+
+.stat-item p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1023px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .about-stats {
+    justify-content: center;
+  }
+
+  .nexus-logo-orb {
+    width: 200px;
+    height: 200px;
+  }
+}

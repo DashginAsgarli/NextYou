@@ -1,0 +1,82 @@
+.lang-three-box {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.lang-three-section {
+  padding-top: 1rem;
+}
+
+.lang-three-title {
+  color: white;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.lang-three-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.lang-three-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.lang-three-item:hover {
+  background: rgba(108, 99, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.lang-three-flag {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.lang-three-name {
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.lang-three-label {
+  color: #B0B8D3;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .lang-three-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .lang-three-box {
+    padding: 1rem;
+  }
+
+  .lang-three-flag {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .lang-three-name {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+  }
+
+  .lang-three-label {
+    font-size: 0.7rem;
+  }
+
+}

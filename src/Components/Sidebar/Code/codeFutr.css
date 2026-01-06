@@ -1,0 +1,290 @@
+.salary-card-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 40px;
+  color: white;
+  margin: 50px 70px;
+  box-sizing: border-box;
+}
+
+.predictor-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.predictor-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(58, 123, 213, 0.3);
+}
+
+.predictor-header p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  color: #a8d0ff;
+}
+
+.predictor-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.control-group {
+  margin-bottom: 25px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #b3d4ff;
+}
+
+.control-group label span {
+  color: #00d2ff; /* Parlaq cyan-mavi */
+  font-weight: bold;
+}
+
+.custom-select-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 10px 18px;
+  border: 1px solid rgba(58, 123, 213, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  background: rgba(58, 123, 213, 0.1);
+  color: #b3d4ff;
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+}
+
+.chip:hover {
+  background: rgba(58, 123, 213, 0.2);
+  transform: translateY(-2px);
+}
+
+.chip.active {
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  color: white;
+  box-shadow: 0 0 20px rgba(58, 123, 213, 0.5);
+  border-color: transparent;
+}
+
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: 1px solid rgba(58, 123, 213, 0.3);
+  outline: none;
+  font-size: 0.9rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233a7bd5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+select:focus {
+  border-color: #3a7bd5;
+  box-shadow: 0 0 0 2px rgba(58, 123, 213, 0.2);
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(58, 123, 213, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+  border: 2px solid white;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
+
+.salary-box {
+  background: linear-gradient(145deg, 
+    rgba(58, 123, 213, 0.15), 
+    rgba(0, 0, 0, 0.25));
+  padding: 45px 20px;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid rgba(58, 123, 213, 0.3);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.salary-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    #3a7bd5, 
+    #00d2ff, 
+    transparent);
+}
+
+.salary-box .label {
+  display: block;
+  font-size: 0.9rem;
+  color: #b3d4ff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.amount-range {
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px rgba(58, 123, 213, 0.3);
+  margin: 15px 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.market-note {
+  font-size: 0.8rem;
+  color: #8cc0ff;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(58, 123, 213, 0.1);
+  display: inline-block;
+}
+
+@media (max-width: 1023px) {
+  .salary-card-container {
+    margin: 30px 20px;
+    padding: 30px 25px;
+    border-radius: 25px;
+  }
+  
+  .predictor-header h2 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .predictor-header p {
+    font-size: 0.9rem;
+  }
+  
+  .predictor-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .controls {
+    order: 2;
+  }
+  
+  .display-result {
+    order: 1;
+  }
+  
+  .salary-box {
+    padding: 35px 20px;
+  }
+  
+  .amount-range {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .salary-card-container {
+    padding: 25px 20px;
+    margin: 20px 15px;
+    border-radius: 20px;
+  }
+  
+  .predictor-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .predictor-header p {
+    font-size: 0.85rem;
+  }
+  
+  .chip {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    min-width: 85px;
+  }
+  
+  .control-group {
+    margin-bottom: 20px;
+  }
+  
+  .control-group label {
+    font-size: 0.85rem;
+  }
+  
+  select {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+  
+  .salary-box {
+    padding: 30px 15px;
+  }
+  
+  .amount-range {
+    font-size: 1.8rem;
+  }
+  
+  .salary-box .label {
+    font-size: 0.85rem;
+  }
+  
+  .market-note {
+    font-size: 0.75rem;
+  }
+}

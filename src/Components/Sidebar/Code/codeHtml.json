@@ -1,0 +1,680 @@
+[
+  {
+    "id": 1,
+    "title": "HTML Giriş",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "10 dəqiqə",
+    "points": 40,
+    "icon": "bi bi-file-earmark-code",
+    "content": {
+      "description": "HTML (HyperText Markup Language) veb səhifələrin strukturunu yaratmaq üçün istifadə olunan standart işarələmə dilidir.",
+      "theory": "HTML veb-in əsas daşıdır və bütün veb səhifələrin qurulması üçün istifadə olunur. HTML elementlərindən ibarətdir ki, bu elementlər də məzmunu işarələmək üçün istifadə olunur. HTML bir sıra elementlərdən ibarətdir. Bu elementlər brauzerə mətnin, şəkillərin, başlıqların, cədvəllərin və digər məzmunların necə təqdim olunacağını izah edir.HTML elementləri brauzerə məzmunu necə göstərəcəyini bildirir. Bəyannamə <!DOCTYPE html>bu sənədin HTML5 sənədi olduğunu müəyyən edir. Element <html>HTML səhifəsinin kök elementidir. Element <head>HTML səhifəsi haqqında meta məlumat ehtiva edir. Element <title>HTML səhifəsi üçün başlıq təyin edir (brauzerin başlıq çubuğunda və ya səhifənin sekmesinde göstərilir). Element <body>sənədin əsas hissəsini müəyyən edir və başlıqlar, abzaslar, şəkillər, hiperlinklər, cədvəllər, siyahılar və s. kimi bütün görünən məzmunlar üçün bir konteynerdir. Element <h1>böyük bir başlıq təyin edir. Element <p>bir abzası təyin edir",
+      "examples": [
+        "<!DOCTYPE html> - bu sənədin HTML5 sənədi olduğunu müəyyən edir",
+        "<html> - HTML səhifəsinin kök elementidir.",
+        "<head> -HTML səhifəsi haqqında meta məlumat ehtiva edir. ",
+        "<title>Səhifə Başlığı</title> - HTML səhifəsi üçün başlıq təyin edir",
+        "<body> - sənədin əsas hissəsini müəyyən edir və bütün görünən məzmunlar üçün bir konteynerdir. "
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Aşağıdakı HTML strukturunu tamamlayın:",
+          "initialCode": "<!DOCTYPE html>\n<html>\n<head>\n    <title>______</title>\n</head>\n<body>\n    <______>Salam Dünya!</______>\n</body>\n</html>",
+          "correctAnswers": {
+            "title": "Mənim Səhifəm",
+            "h1": "h1"
+          }
+        },
+        {
+          "type": "multiple",
+          "question": "HTML nə deməkdir?",
+          "options": [
+            "Hyper Text Markup Language",
+            "High Tech Modern Language",
+            "Hyper Transfer Markup Language",
+            "Home Tool Markup Language"
+          ],
+          "correct": "Hyper Text Markup Language"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "HTML Elementləri",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "15 dəqiqə",
+    "points": 50,
+    "icon": "bi bi-tags",
+    "content": {
+      "description": "HTML elementləri veb səhifənin strukturunu və məzmununu təyin edir.",
+      "theory": "HTML elementi üç əsas hissədən ibarətdir: başlanğıc teq, məzmun və bitiş teqi. Başlanğıc teqi elementin başladığını, məzmun hissəsi görünən tərəfi, bitiş teqi isə elementin bitdiyini bildirir. Nümunə: <p>Bu bir abzadır</p>. Burada <p> başlanğıc teqidir, 'Bu bir abzadır' məzmunudur, </p> isə bitiş teqidir. Bəzi elementlər boş element adlanır və onların bitiş teqi olmur, məsələn: <br> sətir qırılması elementi və ya <img> şəkil elementi. Boş elementlər adətən tək teq şəklində yazılır və məzmun daşımırlar. Elementlər iç-içə yerləşdirilə bilər, bu struktur mürəkkəb səhifələr yaratmağa imkan verir.",
+      "examples": [
+        "<p>Bu bir abzadır.</p>",
+        "<h1>Bu ən böyük başlıqdır</h1>",
+        "<br> - sətir qırılması (boş element)",
+        "<img src='resm.jpg' alt='Təsvir'>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "Hansı HTML elementi düzgün yazılıb?",
+          "options": [
+            "<p Bu bir abzadır>",
+            "<p>Bu bir abzadır<p>",
+            "<p>Bu bir abzadır</p>",
+            "</p>Bu bir abzadır<p>"
+          ],
+          "correct": "<p>Bu bir abzadır</p>"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "HTML Başlıqları",
+    "category": "Formatlaşdırma",
+    "level": "Başlanğıc",
+    "duration": "12 dəqiqə",
+    "points": 45,
+    "icon": "bi bi-type-h1",
+    "content": {
+      "description": "HTML başlıqları səhifədəki başlıqları təyin etmək üçün istifadə olunur.",
+      "theory": "HTML-də 6 səviyyəli başlıq elementləri mövcuddur: <h1> ən vacib, <h2>, <h3>, <h4>, <h5>, <h6> ən az vacib. <h1> elementini hər səhifədə bir dəfə istifadə etmək tövsiyə olunur, çünki bu əsas başlıqdır və axtarış sistemləri üçün çox vacibdir. Başlıqlar həcm baxımından fərqlənir - <h1> ən böyük, <h6> ən kiçik həcmə malikdir. Başlıqlar səhifənin strukturu və oxunaqlılığı üçün çox vacibdir. Onlar məzmunu məntiqi hissələrə ayırır və istifadəçilərə səhifənin strukturu haqqında vizual məlumat verir. Həmçinin başlıqlar SEO (Search Engine Optimization) üçün həssasdır və düzgün istifadə olunduqda axtarış sistemlərində daha yaxşı yerləşməyə kömək edir.",
+      "examples": [
+        "<h1>Əsas Başlıq</h1>",
+        "<h2>Alt Başlıq</h2>",
+        "<h3>Kiçik Başlıq</h3>",
+        "<h4>Daha Kiçik Başlıq</h4>",
+        "<h5>Kiçik</h5>",
+        "<h6>Ən Kiçik</h6>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Aşağıdakı başlıq strukturunu düzgün ardıcıllıqla yazın:",
+          "initialCode": "______ - Əsas Başlıq\n______ - Alt Başlıq 1\n______ - Alt Başlıq 2\n______ - Kiçik Başlıq",
+          "correctAnswers": {
+            "line1": "h1",
+            "line2": "h2",
+            "line3": "h3",
+            "line4": "h4"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "HTML Linkləri",
+    "category": "Formalar və Media",
+    "level": "Orta",
+    "duration": "20 dəqiqə",
+    "points": 60,
+    "icon": "bi bi-link",
+    "content": {
+      "description": "HTML linkləri digər səhifələrə, resurslara və ya səhifənin digər hissələrinə keçid yaratmaq üçün istifadə olunur.",
+      "theory": "<a> elementi (anchor - lövbər) hiperlink yaratmaq üçün istifadə olunur. href atributu linkin hədəf ünvanını təyin edir. Linklər veb səhifələri bir-birinə bağlayaraq vebin strukturunu yaradır. Linklər mətn, şəkil və ya digər elementlər ola bilər. target atributu ilə linkin yeni pəncərədə və ya cari pəncərədə açılmasını təyin etmək olar. 'title' atributu ilə siçanı linkin üzərinə gətirdikdə görünən altyazı əlavə etmək mümkündür. Linklər e-poçt ünvanlarına, fayllara və hətta səhifənin daxili hissələrinə də yönləndirilə bilər. Məsələn: <a href='mailto:email@example.com'>E-poçt göndər</a> və ya <a href='#section1'>Bölməyə keçid</a>. Linklər vebin əsas qurğusudur və veb səhifələrinin bir-birinə bağlanmasını təmin edir.",
+      "examples": [
+        "<a href='https://www.example.com'>Example-a keçid</a>",
+        "<a href='page.html'>Digər səhifə</a>",
+        "<a href='#section1'>Səhifənin digər hissəsinə</a>",
+        "<a href='mailto:email@example.com'>Email göndər</a>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Google-a keçid yaradan HTML kodunu yazın:",
+          "initialCode": "______ href=\"______\">Google______",
+          "correctAnswers": {
+            "tag": "a",
+            "link": "https://www.google.com",
+            "text": "Google"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "HTML Şəkilləri",
+    "category": "Formalar və Media",
+    "level": "Orta",
+    "duration": "18 dəqiqə",
+    "points": 55,
+    "icon": "bi bi-image",
+    "content": {
+      "description": "HTML şəkilləri veb səhifələrə şəkil əlavə etmək üçün istifadə olunur.",
+      "theory": "<img> elementi veb səhifəyə şəkil daxil etmək üçün istifadə olunur. src (source) atributu şəklin fayl yolunu və ya URL ünvanını təyin edir. alt (alternative text) atributu şəkil yüklənmədikdə və ya ekran oxuyucular üçün alternativ mətni təyin edir. width və height atributları şəklin enini və hündürlüyünü təyin edir. alt atributu şəkil yüklənmədikdə və ya ekran oxuyucu proqramları üçün vacibdir, çünki görme qüsuru olan istifadəçilərə şəklin təsvirini verir. Şəkillər veb təcrübəsini zənginləşdirir və məzmunu daha cəlbedici edir. Lakin böyük şəkillər səhifənin yüklənmə sürətini aşağı sala bilər, buna görə də şəkilləri optimallaşdırmaq vacibdir. Şəkillər yerli fayllardan və ya xarici URL-lərdən yüklənə bilər.",
+      "examples": [
+        "<img src='photo.jpg' alt='Təbiət fotosu'>",
+        "<img src='images/logo.png' alt='Loqo' width='200' height='100'>",
+        "<img src='https://example.com/image.jpg' alt='Xarici şəkil'>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "<img> elementi üçün hansı atribut mütləqdir?",
+          "options": ["src", "alt", "width", "height"],
+          "correct": "src"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "HTML Cədvəlləri",
+    "category": "Struktur",
+    "level": "Orta",
+    "duration": "25 dəqiqə",
+    "points": 70,
+    "icon": "bi bi-table",
+    "content": {
+      "description": "HTML cədvəlləri məlumatları sətir və sütunlarda təşkil etmək üçün istifadə olunur.",
+      "theory": "<table> elementi məlumatları sətir və sütunlarda təqdim etmək üçün istifadə olunur. <tr> (table row) elementi cədvəlin sətirlərini, <td> (table data) elementi məlumat xanalarını, <th> (table header) elementi başlıq xanalarını təyin edir. Cədvəllər məlumatları strukturlu şəkildə təqdim etmək üçün ideal həlldir. Cədvəllər mürəkkəb məlumatları oxunaqlı formada təqdim etməyə kömək edir. <thead>, <tbody> və <tfoot> elementləri cədvəlin müxtəlif hissələrini qruplaşdırmaq üçün istifadə olunur. colspan və rowspan atributları xanaların neçə sütun və ya sətir əhatə etdiyini təyin edir. Cədvəllər məlumat təqdimatı, qiymət cədvəlləri, cədvəllər və digər strukturlu məlumatlar üçün geniş istifadə olunur. Düzgün qurulmuş cədvəllər məlumatın asan başa düşülməsini təmin edir.",
+      "examples": [
+        "<table>",
+        "  <tr>",
+        "    <th>Ad</th>",
+        "    <th>Yaş</th>",
+        "  </tr>",
+        "  <tr>",
+        "    <td>Əli</td>",
+        "    <td>25</td>",
+        "  </tr>",
+        "</table>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "2 sütunlu sadə cədvəl yaradın:",
+          "initialCode": "<______>\n  <______>\n    <______>Ad</______>\n    <______>Şəhər</______>\n  </______>\n  <______>\n    <______>Ayşə</______>\n    <______>Bakı</______>\n  </______>\n</______>",
+          "correctAnswers": {
+            "table": "table",
+            "tr1": "tr",
+            "th1": "th",
+            "th2": "th",
+            "tr1_end": "tr",
+            "tr2": "tr",
+            "td1": "td",
+            "td2": "td",
+            "tr2_end": "tr",
+            "table_end": "table"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "HTML Formaları",
+    "category": "Formalar və Media",
+    "level": "Qabaqcıl",
+    "duration": "30 dəqiqə",
+    "points": 80,
+    "icon": "bi bi-input-cursor-text",
+    "content": {
+      "description": "HTML formaları istifadəçidən məlumat almaq üçün istifadə olunur.",
+      "theory": "<form> elementi istifadəçi girişi üçün konteynerdir. <input>, <textarea>, <select>, <button> kimi elementlər istifadəçi girişini yaratmaq üçün istifadə olunur. Formlar veb tətbiqlərinin əsas hissəsidir və istifadəçilərdən məlumat toplamaq üçün istifadə olunur. Form elementlərinin 'action' atributu məlumatın haraya göndəriləcəyini, 'method' atributu isə GET və ya POST metodundan hansının istifadə olunacağını təyin edir. GET metodu məlumatı URL-də göndərir, POST metodu isə məlumatı gövdədə gizli şəkildə göndərir. Formlar müxtəlif giriş növlərini dəstəkləyir: mətn, şifrə, çek qutusu, radio düyməsi, fayl yükləmə və s. <label> elementi giriş elementləri üçün etiket yaratmaq üçün istifadə olunur. Formlar istifadəçi qeydiyyatı, giriş səhifələri, əlaqə formaları və digər interaktiv elementlər üçün vacibdir.",
+      "examples": [
+        "<form action='/submit' method='post'>",
+        "  <label for='name'>Ad:</label>",
+        "  <input type='text' id='name' name='name'>",
+        "  <input type='submit' value='Göndər'>",
+        "</form>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "Form məlumatını göndərmək üçün hansı metod istifadə olunur?",
+          "options": ["GET və POST", "SEND və RECEIVE", "INPUT və OUTPUT", "FORM və SUBMIT"],
+          "correct": "GET və POST"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "HTML5 Semantik Elementlər",
+    "category": "Struktur",
+    "level": "Qabaqcıl",
+    "duration": "35 dəqiqə",
+    "points": 85,
+    "icon": "bi bi-layout-text-sidebar",
+    "content": {
+      "description": "HTML5 semantik elementləri veb səhifənin müxtəlif hissələrini daha yaxşı təsvir edir.",
+      "theory": "HTML5 semantik elementləri veb səhifənin müxtəlif hissələrini daha yaxşı təsvir edir. <header>, <nav>, <section>, <article>, <aside>, <footer> kimi elementlər məzmunun mənasını aydınlaşdırır. Brauzerlər və axtarış sistemləri üçün daha yaxşı başa düşülmə təmin edir. <header> elementi səhifənin başlıq hissəsini təyin edir. <nav> elementi naviqasiya linklərini ehtiva edir. <section> elementi səhifənin məzmun hissələrini qruplaşdırır. <article> elementi müstəqil məzmunu təyin edir. <aside> elementi yan məzmunu təyin edir. <footer> elementi səhifənin aşağı hissəsini təyin edir. Semantik elementlər kodun oxunaqlılığını artırır və veb səhifələrin strukturunu daha yaxşı təsvir edir. Həmçinin ekran oxuyucular üçün daha yaxşı dəstək təmin edir və SEO üçün faydalıdır. Müasir veb dizaynın əsas komponentidir.",
+      "examples": [
+        "<header>",
+        "  <h1>Sayt Başlığı</h1>",
+        "</header>",
+        "<nav>",
+        "  <a href='/'>Ana səhifə</a>",
+        "  <a href='/about'>Haqqımızda</a>",
+        "</nav>",
+        "<main>",
+        "  <article>",
+        "    <h2>Məqalə Başlığı</h2>",
+        "    <p>Məqalə məzmunu...</p>",
+        "  </article>",
+        "</main>",
+        "<footer>",
+        "  <p>© 2024 Mənim Saytım</p>",
+        "</footer>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Semantik HTML5 strukturu yaradın:",
+          "initialCode": "<______>\n  <h1>Mənim Bloqum</h1>\n</______>\n<______>\n  <______>Əsas Məzmun</______>\n</______>\n<______>\n  <p>Copyright 2024</p>\n</______>",
+          "correctAnswers": {
+            "header": "header",
+            "header_end": "header",
+            "main": "main",
+            "h1": "h1",
+            "main_end": "main",
+            "footer": "footer"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "title": "CSS ilə HTML",
+    "category": "Formatlaşdırma",
+    "level": "Orta",
+    "duration": "22 dəqiqə",
+    "points": 65,
+    "icon": "bi bi-brush",
+    "content": {
+      "description": "CSS istifadə edərək HTML elementlərini üslublaşdırmaq.",
+      "theory": "CSS (Cascading Style Sheets) HTML elementlərinin görünüşünü təyin etmək üçün istifadə olunur. CSS HTML elementlərinin rənglərini, ölçülərini, şriftlərini, aralıqlarını və digər vizual xüsusiyyətlərini təyin etməyə imkan verir. CSS üç əsas üsulla HTML-ə əlavə edilə bilər: inline (daxili) üsul - style atributu ilə birbaşa HTML elementinə əlavə olunur; internal (daxili) üsul - <style> elementi ilə HTML sənədinin <head> hissəsində yazılır; external (xarici) üsul - xarici .css faylı yaradılır və <link> elementi ilə HTML sənədinə əlavə olunur. CSS selektorları vasitəsilə HTML elementləri seçilir və onlara üslub tətbiq olunur. CSS veb səhifələrin vizual keyfiyyətini artırır və istifadəçi təcrübəsini yaxşılaşdırır. Responsive dizayn yaratmaq üçün də CSS vacibdir.",
+      "examples": [
+        "<style>",
+        "  h1 { color: blue; }",
+        "</style>",
+        "<h1 style='color: red;'>Qırmızı başlıq</h1>",
+        "<link rel='stylesheet' href='style.css'>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Başlığı mavi etmək üçün inline CSS yazın:",
+          "initialCode": "<h1 ______>Mavi Başlıq</h1>",
+          "correctAnswers": {
+            "style": "style='color: blue;'"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "JavaScript ilə HTML",
+    "category": "Əsaslar",
+    "level": "Qabaqcıl",
+    "duration": "28 dəqiqə",
+    "points": 75,
+    "icon": "bi bi-code-slash",
+    "content": {
+      "description": "JavaScript istifadə edərək HTML-i dinamik etmək.",
+      "theory": "JavaScript veb səhifələri interaktiv etmək üçün istifadə olunur. HTML elementləri JavaScript ilə dinamik şəkildə manipulyasiya edilə bilər. JavaScript kodu HTML-ə <script> elementi ilə əlavə olunur. JavaScript DOM (Document Object Model) vasitəsilə HTML elementlərinə çıxış əldə edir və onları dəyişə bilir. Məsələn: elementlərin məzmununu dəyişmək, atributları dəyişdirmək, elementləri yaratmaq və silmək. JavaScript istifadəçi interaksiyalarını (kliklər, tuş basmaları, forma göndərmələri) emal edir və səhifəni dinamik şəkildə yeniləyir. Event listeners (hadisə dinləyiciləri) istifadəçi hərəkətlərinə cavab verir. JavaScript müasir veb tətbiqlərinin əsas texnologiyasıdır və veb səhifələrə interaktivlik və dinamik xüsusiyyətlər əlavə edir. Ajax texnologiyası ilə serverdən məlumat asinxron şəkildə alına bilir və səhifə yenidən yüklənmədən yenilənə bilir.",
+      "examples": [
+        "<button onclick='myFunction()'>Klik et</button>",
+        "<script>",
+        "  function myFunction() {",
+        "    document.getElementById('demo').innerHTML = 'Salam Dünya!';",
+        "  }",
+        "</script>",
+        "<p id='demo'></p>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "JavaScript kodu HTML-ə necə əlavə olunur?",
+          "options": [
+            "<script> elementi ilə",
+            "<javascript> elementi ilə",
+            "<js> elementi ilə",
+            "<code> elementi ilə"
+          ],
+          "correct": "<script> elementi ilə"
+        }
+      ]
+    }
+  },
+
+
+  
+  {
+    "id": 11,
+    "title": "HTML Redaktorları",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "8 dəqiqə",
+    "points": 35,
+    "icon": "bi bi-code-square",
+    "content": {
+      "description": "HTML kodunu yazmaq üçün istifadə olunan redaktorlar və onların xüsusiyyətləri.",
+      "theory": "HTML kodunu yazmaq üçün müxtəlif redaktorlardan istifadə oluna bilər. Ən sadəsi Notepad (Windows) və ya TextEdit (Mac) kimi mətn redaktorlarıdır. Professional HTML inkişafı üçün Visual Studio Code, Sublime Text, Atom, Brackets kimi xüsusi kod redaktorları tövsiyə olunur. Bu redaktorlar sintaksis vurğulama, kod tamamlama, avtomatik formatlaşdırma və s. kimi xüsusiyyətlər təqdim edir. Onlar HTML kodunu daha effektiv yazmağa və səhvləri asanlıqla tapmağa kömək edir. Bəzi redaktorlar live preview (canlı önizləmə) xüsusiyyətinə malikdir ki, bu da kod dəyişdikcə nəticəni real vaxtda görməyə imkan verir.",
+      "examples": [
+        "<!-- Visual Studio Code istifadəsi -->",
+        "<!-- Sublime Text istifadəsi -->",
+        "<!-- Atom istifadəsi -->",
+        "<!-- Notepad++ istifadəsi -->"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "HTML kod yazmaq üçün ən yaxşı redaktor hansıdır?",
+          "options": [
+            "Microsoft Word",
+            "Visual Studio Code",
+            "Adobe Photoshop",
+            "Windows Calculator"
+          ],
+          "correct": "Visual Studio Code"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "title": "HTML Şərhləri",
+    "category": "Formatlaşdırma",
+    "level": "Başlanğıc",
+    "duration": "7 dəqiqə",
+    "points": 30,
+    "icon": "bi bi-chat-left-text",
+    "content": {
+      "description": "HTML koduna şərh əlavə etmək və onların istifadəsi.",
+      "theory": "HTML şərhləri kodun müəyyən hissələrini izah etmək və ya müvəqqəti olaraq kodu deaktiv etmək üçün istifadə olunur. Şərhlər <!-- şərh mətni --> sintaksisi ilə yazılır və brauzer tərəfindən göstərilmir. Şərhlər kodun oxunaqlılığını artırır, digər proqramçılara və ya gələcəkdə özünüzə kodun məqsədini izah edir. Uzun və mürəkkəb kod bloklarında şərhlər xüsusilə faydalıdır. Şərhlər həmçinin kodun müəyyən hissələrini sınaq məqsədi ilə deaktiv etmək üçün də istifadə oluna bilər.",
+      "examples": [
+        "<!-- Bu bir HTML şərhidir -->",
+        "<h1>Başlıq</h1>",
+        "<!-- Bu çoxsətirli şərh nümunəsidir -->",
+        "<p>Abzas</p> <!-- Bu abzas üçün şərhdir -->"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Aşağıdakı kod hissəsinə şərh əlavə edin:",
+          "initialCode": "<!-- ______ -->\n<h1>Salam Dünya</h1>",
+          "correctAnswers": {
+            "comment": "Bu səhifənin əsas başlığıdır"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "title": "HTML Rəngləri",
+    "category": "Formatlaşdırma",
+    "level": "Orta",
+    "duration": "15 dəqiqə",
+    "points": 50,
+    "icon": "bi bi-palette",
+    "content": {
+      "description": "HTML-də rənglərin təyin edilməsi və istifadəsi.",
+      "theory": "HTML-də rənglər üç əsas üsulla təyin oluna bilər: RGB dəyərləri (rgb(255, 0, 0)), HEX kodları (#FF0000) və rəng adları (red). CSS vasitəsilə rənglər HTML elementlərinə tətbiq olunur. RGB formatında hər rəng 0-255 arasında dəyər alır (qırmızı, yaşıl, mavi). HEX formatı isə # işarəsindən sonra 6 rəqəm/hərfdən ibarətdir. 140-dan çox standart rəng adı mövcuddur. Rənglərin seçimi veb dizaynın vacib hissəsidir və istifadəçi təcrübəsini, oxunaqlılığı və markanın görünüşünü təsir edir.",
+      "examples": [
+        "<p style='color: red;'>Qırmızı mətn</p>",
+        "<div style='background-color: #0000FF;'>Mavi fon</div>",
+        "<h1 style='color: rgb(0, 255, 0);'>Yaşıl başlıq</h1>",
+        "<span style='color: #FFA500;'>Narıncı mətn</span>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "RGB(255, 0, 0) hansı rəngi təmsil edir?",
+          "options": ["Qırmızı", "Yaşıl", "Mavi", "Sarı"],
+          "correct": "Qırmızı"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "title": "HTML Div",
+    "category": "Struktur",
+    "level": "Orta",
+    "duration": "12 dəqiqə",
+    "points": 45,
+    "icon": "bi bi-box",
+    "content": {
+      "description": "<div> elementi və onun veb səhifə strukturu üçün əhəmiyyəti.",
+      "theory": "<div> elementi HTML-də digər elementləri qruplaşdırmaq və səhifənin strukturu üçün istifadə olunur. 'Division' sözündən gəlir və səhifənin müxtəlif hissələrini bölmək üçün konteyner kimi işləyir. Div elementləri özləri heç bir vizual təsir yaratmır, lakin CSS ilə üslublaşdırıla və JavaScript ilə manipulyasiya oluna bilər. Div-lər mürəkkəb veb səhifə strukturları yaratmaq üçün əsas vasitədir. Onlar grid sistemləri, flexbox və digər layout texnikaları ilə birlikdə istifadə olunur. Div elementlərinə class və id atributları əlavə edilərək CSS tərəfindən seçilə və üslublaşdırıla bilər.",
+      "examples": [
+        "<div class='header'>Başlıq hissəsi</div>",
+        "<div id='content'>Əsas məzmun</div>",
+        "<div style='width: 300px; height: 200px; background: gray;'></div>",
+        "<div>\n  <h2>Başlıq</h2>\n  <p>Məzmun</p>\n</div>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Bir div elementi yaradın və ona 'container' class əlavə edin:",
+          "initialCode": "<______ class=\"______\">Məzmun</______>",
+          "correctAnswers": {
+            "div_start": "div",
+            "class": "container",
+            "div_end": "div"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "title": "HTML Fayl Yolları",
+    "category": "Əsaslar",
+    "level": "Orta",
+    "duration": "18 dəqiqə",
+    "points": 55,
+    "icon": "bi bi-folder",
+    "content": {
+      "description": "HTML-də fayl yollarının düzgün istifadəsi.",
+      "theory": "HTML-də fayl yolları şəkillərə, script fayllarına, stil fayllarına və digər sənədlərə istinad etmək üçün istifadə olunur. Üç növ fayl yolu mövcuddur: mütləq yollar (https://example.com/images/photo.jpg), nisbi yollar (images/photo.jpg) və kök nisbi yollar (/images/photo.jpg). Mütləq yollar tam URL ünvanından istifadə edir. Nisbi yollar cari sənədə nisbətən işləyir. Kök nisbi yollar veb saytın kök qovluğundan başlayır. Fayl yollarının düzgün qurulması veb saytın düzgün işləməsi üçün vacibdir. Səhv yollar şəkillərin yüklənməməsinə, CSS və JavaScript fayllarının işləməməsinə səbəb ola bilər.",
+      "examples": [
+        "<img src='images/photo.jpg' alt='Şəkil'>",
+        "<link rel='stylesheet' href='styles/main.css'>",
+        "<script src='/js/script.js'></script>",
+        "<a href='../page.html'>Əvvəlki səhifə</a>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "Nisbi fayl yolu nə deməkdir?",
+          "options": [
+            "Tam URL ünvanı",
+            "Cari sənədə nisbətən yol",
+            "Serverin kök qovluğuna nisbətən yol",
+            "Faylın tam sistem yolu"
+          ],
+          "correct": "Cari sənədə nisbətən yol"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "title": "HTML Başlığı",
+    "category": "Əsaslar",
+    "level": "Başlanğıc",
+    "duration": "10 dəqiqə",
+    "points": 40,
+    "icon": "bi bi-window",
+    "content": {
+      "description": "<head> elementi və onun meta məlumatları ehtiva etməsi.",
+      "theory": "<head> elementi HTML sənədinin meta məlumatlarını ehtiva edir. Bu element brauzer pəncərəsində göstərilmir, lakin səhifə haqqında məlumat verir. <head> elementi daxilində <title>, <meta>, <link>, <style>, <script> kimi elementlər yerləşir. <title> elementi səhifənin başlığını təyin edir (brauzer sekmesində görünür). <meta> elementi kodlaşdırma, açar sözlər, təsvir və digər meta məlumatları təyin edir. <link> elementi xarici fayllara (CSS faylları) istinad edir. <style> elementi daxili CSS yazmaq üçün istifadə olunur. <script> elementi JavaScript kodu əlavə etmək üçün istifadə olunur.",
+      "examples": [
+        "<head>",
+        "  <title>Mənim Saytım</title>",
+        "  <meta charset='UTF-8'>",
+        "  <meta name='description' content='Pulsuz HTML dərsləri'>",
+        "  <link rel='stylesheet' href='style.css'>",
+        "  <style>body { margin: 0; }</style>",
+        "  <script>console.log('Salam');</script>",
+        "</head>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "HTML sənədinə UTF-8 kodlaşdırması əlavə edin:",
+          "initialCode": "<head>\n  <______ charset=\"______\">\n</head>",
+          "correctAnswers": {
+            "meta": "meta",
+            "charset": "UTF-8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "title": "HTML Düzeni",
+    "category": "Struktur",
+    "level": "Qabaqcıl",
+    "duration": "25 dəqiqə",
+    "points": 70,
+    "icon": "bi bi-layout-split",
+    "content": {
+      "description": "HTML-də müasir səhifə düzenlərinin yaradılması.",
+      "theory": "HTML düzeni veb səhifənin müxtəlif hissələrinin (başlıq, naviqasiya, məzmun, yan panel, aşağı hissə) təşkilidir. Ənənəvi olaraq <div> elementləri və CSS float xüsusiyyəti ilə düzenlər yaradılırdı. Müasir HTML5 ilə semantik elementlər (<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>) daha yaxşı düzenlər yaratmağa imkan verir. CSS Grid və Flexbox texnologiyaları mürəkkəb və responsiv düzenlər yaratmağı asanlaşdırır. Düzgün düzen istifadəçi təcrübəsini yaxşılaşdırır, kodun oxunaqlılığını artırır və SEO üçün faydalıdır.",
+      "examples": [
+        "<header>Başlıq</header>",
+        "<nav>Naviqasiya</nav>",
+        "<main>",
+        "  <article>Məqalə</article>",
+        "  <aside>Yan panel</aside>",
+        "</main>",
+        "<footer>Aşağı hissə</footer>",
+        "<!-- CSS Grid istifadəsi -->",
+        "<div class='grid-container'>",
+        "  <div class='header'>Başlıq</div>",
+        "  <div class='sidebar'>Yan panel</div>",
+        "  <div class='content'>Məzmun</div>",
+        "</div>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "HTML5-də səhifənin əsas məzmunu hansı elementdə olur?",
+          "options": ["<header>", "<nav>", "<main>", "<footer>"],
+          "correct": "<main>"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "title": "HTML Responsiv",
+    "category": "Struktur",
+    "level": "Qabaqcıl",
+    "duration": "30 dəqiqə",
+    "points": 80,
+    "icon": "bi bi-phone",
+    "content": {
+      "description": "Responsiv veb dizayn və müxtəlif cihazlara uyğunlaşan HTML strukturları.",
+      "theory": "Responsiv veb dizayn veb səhifənin müxtəlif ekran ölçülərinə (masaüstü, planşet, telefon) avtomatik uyğunlaşmasıdır. Responsiv dizayn üçün əsas texnologiyalar: Media queries (CSS), Fluid grids (maye gridlər), Flexible images (esnek şəkillər). Viewport meta teqi mobil cihazlarda səhifənin düzgün miqyaslanmasını təmin edir. CSS media queries müxtəlif ekran genişliklərində fərqli CSS tətbiq etməyə imkan verir. Flexbox və Grid layout sistemləri responsiv düzenlər yaratmağı asanlaşdırır. Responsiv dizayn müasir veb inkişafının vacib tələblərindən biridir.",
+      "examples": [
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+        "<!-- Media query nümunəsi -->",
+        "@media (max-width: 600px) {",
+        "  body { background-color: lightblue; }",
+        "}",
+        "<!-- Responsiv görüntü -->",
+        "<img src='image.jpg' style='max-width: 100%; height: auto;'>",
+        "<!-- Flexbox düzeni -->",
+        "<div style='display: flex; flex-wrap: wrap;'>",
+        "  <div style='flex: 1;'>Element 1</div>",
+        "  <div style='flex: 1;'>Element 2</div>",
+        "</div>"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Responsiv dizayn üçün viewport meta teqini əlavə edin:",
+          "initialCode": "<head>\n  <______ name=\"viewport\" content=\"______\">\n</head>",
+          "correctAnswers": {
+            "meta": "meta",
+            "content": "width=device-width, initial-scale=1.0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "title": "HTML obyektləri",
+    "category": "Media",
+    "level": "Orta",
+    "duration": "20 dəqiqə",
+    "points": 60,
+    "icon": "bi bi-file-earmark",
+    "content": {
+      "description": "<object> elementi və xarici resursların HTML-ə daxil edilməsi.",
+      "theory": "<object> elementi xarici resursları (PDF, Flash, video, audio) HTML sənədinə daxil etmək üçün istifadə olunur. Bu element müxtəlif növ məlumatları dəstəkləyir və uyğun plugin tələb edir. <object> elementi ilə <embed> elementi oxşardır, lakin <object> daha müasir və fərdi atributlara malikdir. <param> elementi <object> elementi daxilində parametrləri təyin etmək üçün istifadə olunur. HTML5 ilə <video> və <audio> elementləri üstünlük təşkil etsə də, <object> köhnə kontentin və xüsusi formatların dəstəyi üçün istifadə oluna bilər.",
+      "examples": [
+        "<object data='document.pdf' type='application/pdf' width='300' height='200'>",
+        "  <p>PDF faylını görmək üçün <a href='document.pdf'>buraya klik edin</a></p>",
+        "</object>",
+        "<object data='animation.swf' type='application/x-shockwave-flash'>",
+        "  <param name='movie' value='animation.swf'>",
+        "  <param name='quality' value='high'>",
+        "</object>",
+        "<object data='video.mp4' type='video/mp4' width='640' height='480'>",
+        "  Brauzeriniz video formatını dəstəkləmir.",
+        "</object>"
+      ],
+      "practice": [
+        {
+          "type": "multiple",
+          "question": "<object> elementi əsasən nə üçün istifadə olunur?",
+          "options": [
+            "Mətn yaratmaq",
+            "Xarici resurslar daxil etmək",
+            "CSS stil tətbiq etmək",
+            "JavaScript kodu çalışdırmaq"
+          ],
+          "correct": "Xarici resurslar daxil etmək"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "title": "HTML simvolları",
+    "category": "Formatlaşdırma",
+    "level": "Orta",
+    "duration": "15 dəqiqə",
+    "points": 50,
+    "icon": "bi bi-currency-dollar",
+    "content": {
+      "description": "HTML-də xüsusi simvolların və entity-lərin istifadəsi.",
+      "theory": "HTML-də xüsusi simvollar (entity) & işarəsi ilə başlayır və ; işarəsi ilə bitir. Bəzi simvollar HTML-də xüsusi məna daşıdığı üçün (məsələn: <, >, &) onları entity şəklində yazmaq lazımdır. Məsələn: < üçün &lt;, > üçün &gt;, & üçün &amp;. Boşluq üçün &nbsp; (non-breaking space) istifadə olunur. Müəllif hüququ simvolu üçün &copy;, ticarət nişanı üçün &reg;. Currency simvolları: &euro;, &pound;, &yen;. Riyazi simvollar: &pi;, &sum;, &infin;. Simvolların düzgün istifadəsi mətnin düzgün göstərilməsini təmin edir.",
+      "examples": [
+        "<p>10 &lt; 20</p> <!-- 10 < 20 -->",
+        "<p>AT&amp;T şirkəti</p> <!-- AT&T şirkəti -->",
+        "<p>Qiymət: 100&euro;</p> <!-- Qiymət: 100€ -->",
+        "<p>Müəllif hüququ: &copy; 2024</p> <!-- Müəllif hüququ: © 2024 -->",
+        "<p>Boşluq&nbsp;testi</p> <!-- Boşluq testi -->"
+      ],
+      "practice": [
+        {
+          "type": "code",
+          "question": "Müəllif hüququ simvolunu düzgün şəkildə yazın:",
+          "initialCode": "<p>______ 2024 Mənim Şirkətim</p>",
+          "correctAnswers": {
+            "copyright": "&copy;"
+          }
+        }
+      ]
+    }
+  }
+]
