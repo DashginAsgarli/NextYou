@@ -1,28 +1,22 @@
 {
-  "homepage": "https://DashginAsgarli.github.io/NextYou",
+  "homepage": ".",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.1",
-    "@testing-library/user-event": "^13.5.0",
     "bootstrap-icons": "^1.13.1",
     "i18next": "^25.7.3",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-i18next": "^16.5.1",
     "react-router-dom": "^6.30.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "spotify-web-api-js": "^1.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.12.0",
-    "typescript": "~4.9.5",
-    "ajv-keywords": "^5.1.0"
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "typescript": "4.9.5"
   }
 }
