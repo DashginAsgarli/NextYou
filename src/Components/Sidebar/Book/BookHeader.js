@@ -1,4 +1,4 @@
-function BookHeader({ searchQuery, setSearchQuery, handleSearch }) {
+function BookHeader({ searchQuery, setSearchQuery, handleSearch, activeView, setActiveView }) {
   return (
     <section className="book-one">
       <div className="book-one-h2">
@@ -6,7 +6,12 @@ function BookHeader({ searchQuery, setSearchQuery, handleSearch }) {
         <h2>Kitabxanam</h2>
       </div>
       <div className="book-search">
-        
+        <div className="book-filter-buttons">
+          <button onClick={() => setActiveView("all")}>Kitabxana</button>
+          <button onClick={() => setActiveView("favorites")}>❤️ Favorilər</button>
+          <button onClick={() => setActiveView("rating")}>⭐ Dəyərləndirmə</button>
+        </div>
+
         <input
           type="text"
           placeholder="Kitab axtar..."

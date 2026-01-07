@@ -10,12 +10,12 @@ function Book() {
   const [searchQuery, setSearchQuery] = useState("");
   const [favorites, setFavorites] = useState([]);
   const [readingStats, setReadingStats] = useState({});
+  const [activeView, setActiveView] = useState("all");
 
   useEffect(() => fetchBooks("best books"), []);
 
   function fetchBooks(query) {
     fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=20`)
-    // 
       .then(res => res.json())
       .then(data => setBooks(formatBooks(data)))
   }
@@ -32,10 +32,8 @@ function Book() {
     })) || [];
   }
 
-  // axtarış
   function handleSearch() { fetchBooks(searchQuery.trim() || "best books") }
 
-  // kitabı açmaq
   function openBook(bookId) {
     const url = bookId?.startsWith("/works/") || bookId?.startsWith("/books/")
       ? "https://openlibrary.org" + bookId
@@ -43,12 +41,10 @@ function Book() {
     window.open(url, "_blank");
   }
 
-  // favorit 
   function toggleFavorite(bookId) {
     setFavorites(prev => prev.includes(bookId) ? prev.filter(id => id !== bookId) : [...prev, bookId]);
   }
 
-  //kitab yenilə 
   function handleUpdateBookStatus(bookId, status) {
     setReadingStats(prev => ({
       ...prev, [bookId]: { ...prev[bookId], status, updatedAt: new Date().toISOString() }
@@ -61,26 +57,29 @@ function Book() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
+        activeView={activeView}
+        setActiveView={setActiveView}
+
       />
 
-      <FavoriteBooksSection
+      {activeView === "favorites" &&<FavoriteBooksSection
         favorites={favorites}
         books={books}
         openBook={openBook}
         toggleFavorite={toggleFavorite}
-      />
+      />}
 
-      <BookList
+      {activeView === "all" &&<BookList
         books={books}
         favorites={favorites}
         openBook={openBook}
         toggleFavorite={toggleFavorite}
-      />
+      />}
 
-      <BookReadingTracker
+      {activeView === "rating" &&<BookReadingTracker
         books={books}
         onUpdateBookStatus={handleUpdateBookStatus}
-      />
+      />}
     </div>
   );
 }

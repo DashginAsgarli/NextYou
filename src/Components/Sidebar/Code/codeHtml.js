@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './codeHtml.css';
 import HtmlLessonView from './HtmlLessonView';
-import htmlLessons from './codeHtml.json';
+import htmlLessons from './../../../Data/codeHtml.json';
 
 function Html() {
     const [lessons, setLessons] = useState([]);
@@ -89,7 +89,6 @@ function Html() {
         setProgress(0);
     }
 
-    // filter 
     const filteredLessons = lessons.filter(function (lesson) {
         const categoryMatch = selectedCategory === "all" || lesson.category === selectedCategory;
         const searchMatch =

@@ -518,7 +518,6 @@ function CourseDetail() {
     const { courseId } = useParams();
     const course = syllabuses[courseId];
 
-    if (!course) return <p className="error-message">Kurs tapılmadı</p>;
 
     return (
         <div className="course-detail-container">

@@ -3,7 +3,7 @@ import Faq from "./Faq"
 import "./sosial.css";
 function Sosial() {
     return (
-        <>
+        <section>
             <h1 className="social-container-h1">Əlaqə</h1>
             <div className="social-container">
 
@@ -62,7 +62,7 @@ function Sosial() {
             </div>
             <Feedback/>
             <Faq/>
-        </>
+        </section>
 
     );
 }

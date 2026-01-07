@@ -12,7 +12,6 @@ function HomePage() {
                 <div className="hero-content">
                     <h1>Sənin Sürətinlə, Sənin Marağınla</h1>
                     <p>Kitabla Düşün, Musiqi ilə Hiss Et, Kodla Yarad, Dillə Əlaqə Qur</p>
-
                     <div className="home-page-buttons">
                         <button className="home-page-primary">
                             <i class="bi bi-stars"></i>

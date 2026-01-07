@@ -6,9 +6,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.course-title{
+
+.course-title {
     color: white !important;
 }
+
 .course-card {
     padding: 20px;
     border-radius: 12px;
@@ -25,10 +27,22 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.course-h1 {
+    text-align: center;
+    color: white;
+    margin: 60px 0;
+    font-size: 50px;
+
+}
+
 .course-icon {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+}
+
+.course-title {
+    color: black !important;
 }
 
 .course-icon i {
@@ -267,11 +281,22 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 15px;
     }
+     .course-h1 {
+        margin: 40px 20px;
+        font-size: 34px;
+
+    }
 }
 
 @media (max-width: 767px) {
     .course-detail-container {
         padding: 15px;
+    }
+
+    .course-h1 {
+        margin: 40px 20px;
+        font-size: 24px;
+
     }
 
     .course-header {

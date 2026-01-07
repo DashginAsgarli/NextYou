@@ -20,7 +20,7 @@
 .goal-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgb(255, 107, 107);
+    border: 1px solid rgb(0, 243, 255);
 }
 
 .goal-logo div {
@@ -95,7 +95,7 @@
         padding: 10px 23px;
         width: 90vw;
         border-radius: 10px;
-        margin-top: 20px;
+        margin-top: 0;
     }
 
 

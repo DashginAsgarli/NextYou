@@ -41,6 +41,8 @@ const courses = [
 ];
 function CodeMap() {
     return (
+        <section>
+            <h1 className="course-h1">Haradan başlayacağınızdan əmin deyilsiz?</h1>
         <div className="courses-container">
             {courses.map((course) => (
                 <div key={course.id} className={`course-card ${course.bgColor}`}>
@@ -55,6 +57,7 @@ function CodeMap() {
                 </div>
             ))}
         </div>
+        </section>
     );
 }
 

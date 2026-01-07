@@ -18,9 +18,6 @@ import Book from './Components/Sidebar/Book/Book';
 import Theme from './Components/Theme/Theme';
 
 import Html from './Components/Sidebar/Code/codeHtml';
-import Css from './Components/Sidebar/Code/codeCss'
-import Js from './Components/Sidebar/Code/codeJs'
-
 import Social from './Components/Footer/Sosial';
 import CodeMap from './Components/Sidebar/Code/codeMap';
 import CodeMapDatale from './Components/Sidebar/Code/codeMapDatale';
@@ -70,14 +67,7 @@ function App() {
         <Profil />
         <hr className='sidebar-hr' />
         <div className='sidebar-logo-text'>
-          <div>
-            <i class="bi bi-translate"></i>
-            <p>AZE/EN/RU</p>
-          </div>
-
           <Theme />
-
-
           <div>
             <i class="bi bi-star-fill"></i>
             <p><NavLink to="/parameters" className="icon-text">Xüsusiyyətlər</NavLink></p>
@@ -114,8 +104,6 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/logup" element={<Logup />} />
           <Route path="/codeHtml" element={<Html />} />
-          <Route path="/codeCss" element={<Css />} />
-          <Route path="/codeJs" element={<Js />} />
           <Route path="/social" element={<Social />} />
           <Route path="/codeMap" element={<CodeMap />} />
           <Route path="/courses/:courseId" element={<CodeMapDatale />} />

@@ -19,6 +19,7 @@
 .feedback-content {
     flex: 1;
 }
+
 .feedback-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.8rem;
@@ -98,8 +99,8 @@
 @media (max-width: 767px) {
     .feedback-container {
         flex-direction: column;
-        padding: 30px;
-        gap: 40px;
+        padding: 20px;
+        gap: 20px;
     }
 
     .feedback-content {
@@ -107,11 +108,28 @@
     }
 
     .feedback-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .feedback-row {
         flex-direction: column;
         gap: 0;
     }
+
+    .feedback-text {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    
+
+
+    .feedback-group input,
+    .feedback-group textarea {
+        padding: 10px 35px;
+    }
+
+    .feedback-submit {
+        padding: 10px 30px;
+    }
+
 }

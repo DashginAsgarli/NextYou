@@ -85,16 +85,16 @@
 
 
 .light-theme .planner-item {
-    border: 1px solid #aeff6b !important;
+    border: 1px solid rgb(0, 243, 255) !important;
 }
 
 .light-theme .planner-delete:hover {
-    color: #aeff6b !important;
+    color: rgb(0, 243, 255) !important;
 }
 
 
 .light-theme .planner-add-btn {
-    background-color: #aeff6b !important;
+    background-color: rgb(0, 243, 255) !important;
     color: white !important;
 
 }
@@ -221,3 +221,26 @@
 
 }
 
+.light-theme  .feedback-submit {
+    border: 1px solid rgb(0, 243, 255);
+}
+.light-theme .feedback-title span {
+    color: #36D1DC !important;
+}
+.light-theme .musictime-1 {
+    background-color: #bdbdbd !important;
+}
+.light-theme .musictime-2 {
+    background-color: #ff9a02 !important;
+}
+.light-theme .mucis-panel{
+    background-color: black !important;
+    color: white !important;
+}
+.light-theme .salary-box{
+    background: none;
+}
+.light-theme .module-title{
+    background: none;
+
+}

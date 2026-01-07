@@ -53,12 +53,12 @@ function Code() {
                         <div className="code-two-box">
                             <img src={CssIcon} alt="html" />
                             <h2>CSS</h2>
-                            <div><Link to="/codeCss" className="code-two-link"> Öyrən</Link></div>
+                            <div><Link className="code-two-link"> Öyrən</Link></div>
                         </div>
                         <div className="code-two-box">
                             <img src={JsIcon} alt="html" />
                             <h2>JavaScript</h2>
-                            <div><Link to="/codeJs" className="code-two-link"> Öyrən</Link></div>
+                            <div><Link className="code-two-link"> Öyrən</Link></div>
                         </div>
                         <div className="code-two-box">
                             <img src={ReactIcon} alt="logo" />

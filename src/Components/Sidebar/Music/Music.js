@@ -16,7 +16,6 @@ function Music() {
   function fetchSongs(search = "all") {
     setIsLoading(true);
     fetch(`https://itunes.apple.com/search?term=${search}&entity=song&limit=50`)
-      // 
       .then(res => res.json())
       .then(data => {
         const formattedSongs = data.results
@@ -56,7 +55,6 @@ function Music() {
     };
   }, []);
 
-  // mahni secmek
   function selectSong(index) {
     if (!audioRef.current || index === currentIndex) return;
     setCurrentIndex(index);
@@ -70,7 +68,6 @@ function Music() {
     }
   }
 
-  // play.pauze
   function togglePlay() {
     if (!audioRef.current || songs.length === 0) return;
     if (isPlaying) {
@@ -92,7 +89,6 @@ function Music() {
     }
   }
 
-  // novbeti
   function nextSong() {
     const next = (currentIndex + 1) % songs.length;
     selectSong(next);
@@ -102,14 +98,11 @@ function Music() {
     selectSong(prev);
   }
 
-  // beyen
   function toggleLike(id) {
     let newLikes = likedSongs.includes(id) ? likedSongs.filter(i => i !== id) : [...likedSongs, id];
     setLikedSongs(newLikes);
     localStorage.setItem("music-likedSongs", JSON.stringify(newLikes));
   }
-
-  // axtaris
   function handleSearch(e) {
     e.preventDefault();
     if (!searchTerm.trim()) return;
@@ -144,11 +137,7 @@ function Music() {
     };
   }, [songs, currentIndex]);
 
-  // ses artimi
-  function changeVolume(e) {
-    if (!audioRef.current) return;
-    audioRef.current.volume = parseFloat(e.target.value);
-  }
+
 
   function formatTime(sec) {
     if (!sec || isNaN(sec)) return "0:00";
@@ -162,11 +151,18 @@ function Music() {
   return (
     <div className="music-container">
       <h2 className="music-container-h2"><i class="bi bi-boombox"></i> Musiqi Player</h2>
-      <div className="music-fav">
-        <button onClick={() => {
-          const liked = songs.filter(s => likedSongs.includes(s.id));
-          if (liked.length > 0) setSongs(liked);
-        }}>Bəyəndiklərim ({likedSongs.length})</button>
+      <div className="music-fro-fav">
+         <div className="music-fav">
+          <button onClick={() => {
+            const liked = songs.filter(s => likedSongs.includes(s.id));
+            if (liked.length > 0) setSongs(liked);
+          }}>Bəyəndiklərim ({likedSongs.length})</button>
+        </div>
+        <form onSubmit={handleSearch} className="music-from">
+          <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Sevimli musiqini axtar..." />
+          <button type="submit">Axtar</button>
+        </form>
+       
       </div>
 
       {songs.length > 0 && (
@@ -180,8 +176,8 @@ function Music() {
             </div>
 
             <div className="music-time-div">
-              <div style={{ background: "#ddd", width: "83%", height: "10px", borderRadius: "20px" }} >
-                <div style={{ background: "rgba(255, 60, 0, 0.4)", width: `${progress}%`, height: "100%", borderRadius: "20px" }}></div>
+              <div className="musictime-1" style={{ background: "#ddd", width: "83%", height: "10px", borderRadius: "20px" }} >
+                <div className="musictime-2"  style={{ background: "rgba(255, 60, 0, 0.4)", width: `${progress}%`, height: "100%", borderRadius: "20px" }}></div>
               </div>
               <div>{formatTime(currentTime)} / {formatTime(currentSong.duration)}</div>
             </div>
@@ -190,15 +186,9 @@ function Music() {
               <button className="mucis-panel" onClick={togglePlay}>{isPlaying ? "⏸" : "▶"}</button>
               <button className="mucis-panel" onClick={nextSong}>⏭</button>
             </div>
-            <input className="mucis-panel1" type="range" min="0" max="1" step="0.1" defaultValue="0.7" onChange={changeVolume} />
           </div>
         </div>
       )}
-      <form onSubmit={handleSearch} className="music-from">
-        <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Sevimli musiqini axtar..." />
-        <button type="submit">Axtar</button>
-      </form>
-
       <div className="music-new-box-two">
         <h4>Mahnı Siyahısı</h4>
         <div className="music-co-new-box">
