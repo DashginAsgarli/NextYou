@@ -136,3 +136,4 @@
 Layihə ilə bağlı suallarınız və ya təklifləriniz üçün aşağıdakı vasitələrdən istifadə edə bilərsiniz:
  
 - **Email:** [dashqinasgarli@email.com](mailto:dashqinasgarli@email.com)
+- **GitHub Issues:** [Layihə Issues](https://github.com/DashginAsgarli/NextYou/issues)
