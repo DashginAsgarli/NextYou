@@ -57,15 +57,6 @@
 |   │   │   ├── Parameters.js
 |   │   │   └── Profil.js
 |   │   ├── Images/
-│   │   │   ├── code/             
-│   │   │   │   ├── atomic.webp
-│   │   │   │   ├── Bootstrap.svg.png
-│   │   │   │   ├── C-Sharp.png
-│   │   │   │   ├── C.png
-│   │   │   │   ├── C++.svg.png
-│   │   │   │   └── css.svg
-|   |   |   ├── music1.avif
-|   |   |   └── unnamed.jpg
 |   │   ├── Main/             
 |   │   │   ├── goal.css
 |   │   │   └── Goal.js
