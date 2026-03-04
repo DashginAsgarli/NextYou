@@ -29,18 +29,22 @@ NextYou is a multi-module self-development platform designed to help young peopl
 
 ---
 
+
 ## Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=react,tailwind,git,github,vercel,vscode,figma&theme=dark)](https://skillicons.dev)
 
 ---
 
-## APIs Used
+## 🛠️ APIs Used
 
-| API | Link | Usage |
-|-----|------|-------|
-| 📖 OpenLibrary | [openlibrary.org/developers/api](https://openlibrary.org/developers/api) | Book search & details |
-| 📝 Dictionary API | [dictionaryapi.dev](https://dictionaryapi.dev/) | English word definitions |
-| 🎵 iTunes Search API | [iTunes API](https://itunes.apple.com/search) | Music search & playback |
+### 📖 [OpenLibrary API](https://openlibrary.org/developers/api)
+> **Purpose:** To search for books and retrieve detailed bibliographic metadata.
+
+### 📝 [Dictionary API](https://dictionaryapi.dev/)
+   > **Purpose:** Providing English word definitions, synonyms, and audio pronunciations.
+
+### 🎵 [iTunes Search API](https://itunes.apple.com/search)
+> **Purpose:** Searching for music, fetching album artwork, and streaming audio previews.
 
 ---
 
@@ -88,4 +92,3 @@ npm start
 Have questions or suggestions? Reach out anytime:
 
 [![Email](https://img.shields.io/badge/Email-dashqinasgarli%40email.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:dashqinasgarli@email.com)
-[![GitHub](https://img.shields.io/badge/GitHub-DashginAsgarli-181717?style=flat-square&logo=github)](https://github.com/DashginAsgarli/NextYou)
