@@ -91,4 +91,4 @@ npm start
 
 Have questions or suggestions? Reach out anytime:
 
-[![Email](https://img.shields.io/badge/Email-dashqinasgarli%40email.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:dashqinasgarli@email.com)
+[![Email](https://img.shields.io/badge/Email-dashqinasgarli%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:dashqinasgarli@gmail.com)
