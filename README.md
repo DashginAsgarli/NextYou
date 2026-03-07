@@ -1,4 +1,4 @@
-<div align="center">
+<div >
  
 # NextYou — Self Development Platform
 
@@ -15,19 +15,13 @@
 
 NextYou is a multi-module self-development platform designed to help young people build meaningful habits and skills — all in one place. Whether you want to discover new music, read more books, learn to code, pick up a new language, or stay organized, NextYou has you covered.
 
----
 
-## Modules
-
-| Module | Description |
-|--------|-------------|
-| 🎵 **Music** | Search and listen to music via the iTunes API |
-| 📚 **Books** | Discover and explore books via OpenLibrary |
-| 💻 **Code** | Learn programming with curated resources |
-| 🌐 **Language** | Look up English word meanings and definitions |
-| 📝 **Planner** | Organize your goals and daily tasks |
-
----
+>[!NOTE]
+> <p> 🎵 Music - Search and listen to music via the iTunes API</p> 
+> <p> 📚 Books - Discover and explore books via OpenLibrary</p>
+> <p> 💻 Code - Learn programming with curated resources </p>
+> <p> 🌐 Language - Look up English word meanings and definitions </p>
+> <p> 📝 Planner - Organize your goals and daily tasks </p>
 
 
 ## Tech Stack
